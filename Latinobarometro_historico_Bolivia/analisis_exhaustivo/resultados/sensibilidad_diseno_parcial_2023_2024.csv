@@ -1,0 +1,6 @@
+"anio","variable","n","n_psu","n_strata","pct","ic95_inf","ic95_sup","tipo"
+2023,"P37CSN.A",1168,240,9,31.0787671232876,28.2935447884207,33.8639894581545,"Sensibilidad parcial con PSU=COMDIST y estrato=REG; no incorpora etapas/cuotas."
+2023,"P37CSN.B",1167,240,9,29.8200514138816,27.1869446878752,32.4531581398879,"Sensibilidad parcial con PSU=COMDIST y estrato=REG; no incorpora etapas/cuotas."
+2023,"P37CSN.F",1143,240,9,43.1321084864396,39.9699384273314,46.2942785455478,"Sensibilidad parcial con PSU=COMDIST y estrato=REG; no incorpora etapas/cuotas."
+2023,"P37WVSCS.H",1050,240,9,39.5238095238092,36.3616064273135,42.6860126203048,"Sensibilidad parcial con PSU=COMDIST y estrato=REG; no incorpora etapas/cuotas."
+2024,"P3NOIJ.3",1026,240,9,27.972709551657,25.0324800041101,30.9129390992039,"Sensibilidad parcial con PSU=COMDIST y estrato=REG; no incorpora etapas/cuotas."

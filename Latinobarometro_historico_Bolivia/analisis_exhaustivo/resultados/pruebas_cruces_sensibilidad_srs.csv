@@ -1,0 +1,62 @@
+"anio","variable","constructo","predictor","variable_predictor","n","estadistico","gl","p_srs","minimo_esperado","diagnostico","metodo","p_holm_familia"
+1998,"NP63A","distancia_social","sexo","s1",794,1.02917861894686,1,0.310351664544121,176.120906801008,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.620703329088242
+1998,"NP63A","distancia_social","edad","s2",792,0.946817639291956,3,0.814117415531077,26.8030303030303,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.814117415531077
+2002,"P52WVSC","justificacion_moral","sexo","s1",1109,3.58253663285463,1,0.0583899262349574,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.0583899262349574
+2002,"P52WVSC","justificacion_moral","edad","s2",1109,16.205871817745,3,0.00102892884553923,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.00205785769107845
+2004,"P38STA","justificacion_moral","sexo","s1",999,1.43182822957995,1,0.231466302071915,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.231466302071915
+2004,"P38STA","justificacion_moral","edad","s2",999,20.7871673866215,3,0.000116552192499767,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.000233104384999534
+2006,"P46STM","saliencia_discriminacion","sexo","sexo",1161,1.10853900131627,1,0.292399757828675,6.95779500430663,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.58479951565735
+2006,"P46STM","saliencia_discriminacion","edad","s7",1161,2.87012323052415,3,0.41208609208027,1.86907838070629,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.58479951565735
+2008,"P64WVSST","justificacion_moral","sexo","s8",1052,0.0255597125103491,1,0.872980289062992,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.872980289062992
+2008,"P64WVSST","justificacion_moral","edad","s9",1052,13.7069721522181,3,0.00333240320196913,,"Kruskal–Wallis sobre escala ordinal; sensibilidad SRS","Kruskal–Wallis SRS aproximada",0.00666480640393825
+2008,"P68ST","saliencia_discriminacion","sexo","s8",1056,2.4728476663613,1,0.11582790355039,5.40625,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.11582790355039
+2008,"P68ST","saliencia_discriminacion","edad","s9",1056,10.2388003748828,3,0.0166415948810361,1.41666666666667,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.0332831897620723
+2010,"P14N.G","matrimonio","sexo","SEXO",1020,7.95337415810264,1,0.00479978072754295,97.1588235294118,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.00479978072754295
+2010,"P14N.G","matrimonio","edad","EDAD",1020,19.4264136230102,3,0.000223143725500625,26.5333333333333,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.00044628745100125
+2015,"P69ST.C","matrimonio","sexo","S12",1078,1.04134912080066,1,0.307507909586496,80.969387755102,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.307507909586496
+2015,"P69ST.C","matrimonio","edad","S13",1078,8.70728133539293,3,0.0334468607920606,23.265306122449,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0668937215841211
+2023,"P37CSN.A","derechos_2023","sexo","SEXO",1168,4.65030611507181,1,0.0310480102184066,179.946061643836,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.635599428535381
+2023,"P37CSN.A","derechos_2023","edad","EDAD",1168,55.9684894945591,3,0.00000000000426648663794052,49.1044520547945,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.000000000153593518965859
+2023,"P37CSN.A","derechos_2023","educacion","REEEDUC.1",1168,21.9543069535865,6,0.00123417572245415,26.4169520547945,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0345569202287162
+2023,"P37CSN.A","derechos_2023","ideologia","P16ST",1007,9.80955338019286,10,0.457357851440654,7.86991062562066,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.A","derechos_2023","religion","S1",1156,15.5885317455183,13,0.272064420882684,1.24913494809689,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.A","derechos_2023","practica","S1A",1039,6.04906233374885,3,0.10924748174479,25.2550529355149,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.A","derechos_2023","ingreso_subjetivo","S5",1148,15.4554386146924,3,0.00146604981350671,27.1306620209059,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0395833449646812
+2023,"P37CSN.A","derechos_2023","clase","S2",1125,11.2601633372482,4,0.0237906044689454,5.03466666666667,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.523393298316798
+2023,"P37CSN.A","derechos_2023","territorio","REG",1168,9.58786000665869,8,0.295151726525347,6.21575342465753,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.B","derechos_2023","sexo","SEXO",1167,20.8057888162904,1,0.00000508290962003728,172.359897172237,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.000172818927081267
+2023,"P37CSN.B","derechos_2023","edad","EDAD",1167,55.6548839488793,3,0.00000000000497726031617123,48.6066838046273,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.000000000174204111065993
+2023,"P37CSN.B","derechos_2023","educacion","REEEDUC.1",1167,24.5984210954143,6,0.00040512682275322,25.0488431876607,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0117486778598434
+2023,"P37CSN.B","derechos_2023","ideologia","P16ST",1002,19.0684467208141,10,0.0394018686374784,7.53493013972056,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.669831766837133
+2023,"P37CSN.B","derechos_2023","religion","S1",1154,37.4834745318343,13,0.00034782475708573,1.19930675909879,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.0104347427125719
+2023,"P37CSN.B","derechos_2023","practica","S1A",1037,8.08371310997271,3,0.0443129220558452,23.8804243008679,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.709006752893522
+2023,"P37CSN.B","derechos_2023","ingreso_subjetivo","S5",1145,8.92778163737972,3,0.0302666394540658,24.42096069869,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.635599428535381
+2023,"P37CSN.B","derechos_2023","clase","S2",1120,11.4875289594632,4,0.0215981809616632,4.85714285714286,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.496758162118253
+2023,"P37CSN.B","derechos_2023","territorio","REG",1167,16.8082522919266,8,0.0321688319661327,5.96401028277635,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.635599428535381
+2023,"P37CSN.F","derechos_2023","sexo","SEXO",1143,2.0184966417674,1,0.15539292282736,241.108486439195,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.F","derechos_2023","edad","EDAD",1143,12.7751695138519,3,0.00514892313012326,66.8547681539808,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.123574155122958
+2023,"P37CSN.F","derechos_2023","educacion","REEEDUC.1",1143,8.35906361337264,6,0.212959673061191,34.074365704287,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.F","derechos_2023","ideologia","P16ST",993,17.4407944970806,10,0.0651618074634287,10.368580060423,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.912265304488002
+2023,"P37CSN.F","derechos_2023","religion","S1",1130,15.7874029190345,13,0.260800870963546,1.72389380530973,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.F","derechos_2023","practica","S1A",1016,7.66465782895561,3,0.0534752569946645,33.746062992126,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.802128854919967
+2023,"P37CSN.F","derechos_2023","ingreso_subjetivo","S5",1123,1.12063058075017,3,0.77209625805915,35.7720391807658,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.F","derechos_2023","clase","S2",1102,4.6376337630485,4,0.326538139768938,6.98366606170599,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37CSN.F","derechos_2023","territorio","REG",1143,24.893319357221,8,0.00162059402907401,7.33245844269466,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0421354447559242
+2023,"P37WVSCS.H","derechos_2023","sexo","SEXO",1050,14.5694991496683,1,0.000135083442506387,200.780952380952,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.004187586717698
+2023,"P37WVSCS.H","derechos_2023","edad","EDAD",1050,22.0692755277756,3,0.0000631015037502232,58.4952380952381,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.00208234962375737
+2023,"P37WVSCS.H","derechos_2023","educacion","REEEDUC.1",1050,13.4209678540848,6,0.0368172540033432,29.247619047619,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.662710572060178
+2023,"P37WVSCS.H","derechos_2023","ideologia","P16ST",912,14.6600838351047,10,0.144954745494891,9.52631578947368,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37WVSCS.H","derechos_2023","religion","S1",1041,41.6719301191366,13,0.000074087571757121,1.18731988472622,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.00237080229622787
+2023,"P37WVSCS.H","derechos_2023","practica","S1A",936,3.83825699690263,3,0.279467450663966,28.698717948718,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37WVSCS.H","derechos_2023","ingreso_subjetivo","S5",1031,3.36350306767234,3,0.338901545114633,28.4228903976722,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37WVSCS.H","derechos_2023","clase","S2",1014,3.44501244872477,4,0.48628842585711,5.91715976331361,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2023,"P37WVSCS.H","derechos_2023","territorio","REG",1050,22.6201272758069,8,0.00388777850032207,7.11428571428571,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0971944625080517
+2024,"P3NOIJ.3","distancia_social","sexo","SEXO",1026,23.8435147148294,1,0.00000104493331510724,142.101364522417,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",0.0000094043998359652
+2024,"P3NOIJ.3","distancia_social","edad","EDAD",1026,3.45453410315471,3,0.326706946206041,38.32261208577,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","educacion","REEDUC.1",1026,5.7734309847347,6,0.449043193297624,17.6228070175439,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","ideologia","P16ST",890,4.27551566948379,10,0.934063223723042,5.61797752808989,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","religion","S1",1017,22.8020784528567,11,0.0188459266969355,1.11307767944936,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",0.150767413575484
+2024,"P3NOIJ.3","distancia_social","practica","S1A",893,2.82205655318403,3,0.419881874753023,18.7726763717805,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","ingreso_subjetivo","S5",1013,2.08907330918286,3,0.554126468351753,25.0542941757157,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","clase","S2",998,1.28220167641408,4,0.864387963836719,5.29258517034068,"Sin celda esperada <5","Chi-cuadrado Pearson SRS aproximada",1
+2024,"P3NOIJ.3","distancia_social","territorio","REG",1026,9.56486846972959,8,0.296903256956441,4.47563352826511,"Celdas escasas: interpretar solo como exploración","Chi-cuadrado Pearson SRS aproximada",1

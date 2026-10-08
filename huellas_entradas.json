@@ -1,0 +1,117 @@
+[
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/1996/Latinobarometro_1996_Bolivia_Csv_esp_v1.csv",
+    "sha256": "94863dc0bdb02d0252bc5e24c499c9039ed451cc27a405af7d873f476f8437d2",
+    "bytes": 878694
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/1997/Latinobarometro_1997_Bolivia_Csv_esp_v1.csv",
+    "sha256": "1a82e7801a3a5a53acb0a70626690f46d8075fd2d293a0bf60be0be3ccebb3e2",
+    "bytes": 928992
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/1998/Latinobarometro_1998_Bolivia_Csv_esp_v1.csv",
+    "sha256": "4f990ba0f2a547d0b7ff58e8c6cfe47846229706de74325e154f00492c7d871c",
+    "bytes": 904530
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2000/Latinobarometro_2000_Bolivia_Csv_esp_v1.csv",
+    "sha256": "e09e4a0d88297c7be2b7b1ff814047fab3b8d5b11604eb3caf43b01f657cd8cd",
+    "bytes": 1002021
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2001/Latinobarometro_2001_Bolivia_Csv_esp_v1.csv",
+    "sha256": "fed0708bd0dfded3306d580c3d0dac69d4b3b997817a86536faa7c2dee152dcb",
+    "bytes": 1239452
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2002/Latinobarometro_2002_Bolivia_Csv_esp_v1.csv",
+    "sha256": "8d3266350f96b90d591406b6abb1467e9d63c65c09c2b83d41ed40fb2c885c35",
+    "bytes": 2122807
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2003/Latinobarometro_2003_Bolivia_Csv_esp_v1.csv",
+    "sha256": "7dd929496914ad337ce069d68aae6283afa12ea2770f7a807333af03118226fc",
+    "bytes": 1453759
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2004/Latinobarometro_2004_Bolivia_Csv_esp_v1.csv",
+    "sha256": "810ed3c383c2bbb19308a08322b3c88e33453e049d93f1e146336241b56a9213",
+    "bytes": 1581540
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2005/Latinobarometro_2005_Bolivia_Csv_esp_v1.csv",
+    "sha256": "9603587e1eb14666662f729c8bb8f661845f6b2faaae3f0abec54b3f963e369a",
+    "bytes": 1509216
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2006/Latinobarometro_2006_Bolivia_Csv_esp_v1.csv",
+    "sha256": "be1f5036aee75a365bd597a8d2e24c38bc7b785eecdbb81be926f122a14c6458",
+    "bytes": 1539168
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2007/Latinobarometro_2007_Bolivia_Csv_esp_v1.csv",
+    "sha256": "26dcb3f15eb0f449d13f4d34f0281a3c829857e1e958f149ecc5ccf1886f7dea",
+    "bytes": 1857023
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2008/Latinobarometro_2008_Bolivia_Csv_esp_v1.csv",
+    "sha256": "290f263e4900bce17901489b521f1ec0175ad9d294d5fcdc4244b250dd4f429e",
+    "bytes": 1895948
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2009/Latinobarometro_2009_Bolivia_Csv_esp_v1.csv",
+    "sha256": "6924ee05162b73b6ebfb4101abf1b265fc6b7ec98f4ac1e289c7bc6e42608b6d",
+    "bytes": 1800948
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2010/Latinobarometro_2010_Bolivia_Csv_esp_v12025.csv",
+    "sha256": "9376d58a227c9adc6d0fc47c9bbfec1567b6d58c2efbc892231c4afb4d941fee",
+    "bytes": 1962007
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2011/Latinobarometro_2011_Bolivia_Csv_esp_v1.csv",
+    "sha256": "c344e002022b14727e06558fdf905c90aa631af6a8c73351403d1fae35e6ed9f",
+    "bytes": 2325528
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2013/Latinobarometro_2013_Bolivia_Csv_esp_v1.csv",
+    "sha256": "b5c8ceac721dbe12b8a5d5e8732ca098e735eafef2e2f5d68daf9101e10e9b31",
+    "bytes": 1671822
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2015/Latinobarometro_2015_Bolivia_Csv_esp_v1.csv",
+    "sha256": "6d7273e0b2b5a9dfe5b4e463b08e1af8f3594567a9251ba71ae9f6108ba4fc65",
+    "bytes": 1665695
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2016/Latinobarometro_2016_Bolivia_Csv_esp_v1.csv",
+    "sha256": "bfb47faf10c3647637b3072e19e04e7a65ab74eb03b6bba7c921986f109530eb",
+    "bytes": 1601445
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2017/Latinobarometro_2017_Bolivia_Csv_esp_v1.csv",
+    "sha256": "43b407990d2aa8e82a206e5fa847c09bd92c5fd2925f5b91b79627586cb3fb73",
+    "bytes": 1656277
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2018/Latinobarometro_2018_Bolivia_Csv_esp_v1.csv",
+    "sha256": "e714c3f74a1aaf116ef13282d93cffda52f1e3a803981b02182c6ff08f567efa",
+    "bytes": 1997605
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2020/Latinobarometro_2020_Bolivia_Csv_esp_v1.csv",
+    "sha256": "0aa2016ed56ea2f4c2ba588b3731e9b3a377d66b7b4947e641c9bb7b64b6478f",
+    "bytes": 2636106
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2023/Latinobarometro_2023_Bolivia_Csv_esp_v1.csv",
+    "sha256": "743cce2b68f6103b60780c860c5f9e437bf5c32675ea6442870029712f1063bf",
+    "bytes": 1552706
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/datos_extraidos/2024/Latinobarometro_2024_Bolivia_Csv_esp_v1.csv",
+    "sha256": "3cb9348f4157cc35b331db39a23b6a33bc4b80c6215ac67360d212bba1024fe7",
+    "bytes": 1694609
+  }
+]

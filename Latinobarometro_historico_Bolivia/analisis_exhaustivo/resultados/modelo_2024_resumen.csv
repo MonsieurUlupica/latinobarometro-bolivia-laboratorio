@@ -1,0 +1,2 @@
+"n_muestra","eventos","tasa_eventos","n_bateria_respondida","n_no_respuesta","enfoque","convergio","AIC","brier","nota_conteo"
+859,241,0.280558789289872,1026,174,"Logística binaria no ponderada, casos completos; asociación/modelo exploratorio SRS, no inferencia de diseño ni causal.",TRUE,1020.11724031138,0.192085466428118,"Conteo excluye homosexuales y sustancias/alcohol; seis grupos restantes; asociación de propensión de exclusión, no índice validado."

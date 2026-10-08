@@ -1,0 +1,254 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "610088c19823ac4da485c5bbcd867f2a75ab8b4d80aa03d648c83b86d9f7a703"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "5b697a08a90a3371c10484830a286911159110442c7cf60ca501e7c452eefef4"
+  },
+  {
+    "path": "CITATION.cff",
+    "sha256": "a245d0085d98817609198df326791fcf680b207df7d17bb8eb1c2e37f86c0828"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/inventario_archivos.csv",
+    "sha256": "adc95f0f8827643ff5021194b7276c12b051e558c1a94f0e1bbde728c0e3e907"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exploratorio/analisis_exploratorio.R",
+    "sha256": "a74ae27843e78ec40e37aef4fb2046c60fb10148a7424d9137e5a0c0794cb01e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exploratorio/INFORME_EXPLORATORIO.md",
+    "sha256": "4c66c3cd4f0d0055ee8cc1694c32e74685d3d581a1d892f1b73ecd595c3a1fb8"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exploratorio/README.md",
+    "sha256": "e87e379a28c284b0789fe835c1546bb48f46f31d1940cb9fc18f59f24763eb38"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/analisis_exhaustivo.R",
+    "sha256": "295bb1c16d8ecaa5e3bffc3e15e5daef225adcaec014fa7e7fe039a3ac9bbbd3"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/DOSSIER_ANALITICO.md",
+    "sha256": "99cfc6fa456d00ff17a02d94247b35991e728d491b0a3add0f91c5e0e852c641"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/README.md",
+    "sha256": "ada5fe93a20582495858e1b0373473d12162f56dbf1abba0f375b7dfc7a63eb5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/verificacion_independiente.R",
+    "sha256": "12d9ee4eeb7ae9cac4f1f42752ef69837907eaf20ffe036e405efa6d7321f0f6"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/AUDITORIA_Y_AMPLIACION_TECNICA.md",
+    "sha256": "2398ffe1eb4c40f49ad140b5d4ab19500f149e4722b8d3424da4c83621e4bcc9"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/auditoria_covariables_cruces.csv",
+    "sha256": "320a55dbbf1c24b37eb4d9ac2515c1f9760cf16d1ba906b603ef42a231d4e016"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/auditoria_diseno_y_fuentes.csv",
+    "sha256": "d2a0efb449631562600818c61af2e661410e8f3ee711b6f0164690687c5ee0b5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/auditoria_n_microdato_vs_documentacion.csv",
+    "sha256": "5ee0ef3f77413a036d69407cced411b435bc920d68e762f56f075f5cb6012872"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/auditoria_oleadas.csv",
+    "sha256": "b3667530b2fb7e867c53da37aa2941383dea3380ecc5ee2c92814a40032c9a8d"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/codigos_candidatos_especiales.csv",
+    "sha256": "adf567a32f758cf45ab2843083c39c03407c8b92b847082b6085945e22b9d8a5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/comparaciones_matrimonio_sensibilidad_srs.csv",
+    "sha256": "b9e2b74d958ba9eec83343bd07342ff47fdee9f1c0c9cefa7ece99fa36d285b5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/comparaciones_pareadas_derechos_2023.csv",
+    "sha256": "a8cdae4f8d23a0d3693d27bb4776bf65f51f8f56c28d4a2d4e01689117b828e6"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/comparaciones_pareadas_no_mismas_personas_justificacion.csv",
+    "sha256": "7dec15c87e679643ffc6d7892c4014f50920134c785fb5a9d4a5e31b9b1e103d"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/correlaciones_spearman_derechos_2023.csv",
+    "sha256": "3f1350ee510047561153ca3a6a73231608094eea56fa68ebde0a18e6ea949dac"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/cruces_descriptivos_completos.csv",
+    "sha256": "7e0ae340393a6c87f8f95972d13a7dfed4d232f51a7e1b3e6b8ab072261ffdb0"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/desglose_territorial_2023_2024.csv",
+    "sha256": "2c073d99fcfd504352da42a9ad9d475cb5d6823dd34af60320f024984cde3c5f"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/diagnostico_dimension_comun_2023.csv",
+    "sha256": "a731b2a5973302c3de73e70134bccd46ef9624174c62e516805d35fd68948e34"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/diagnosticos_proporcionalidad_odds_2023.csv",
+    "sha256": "d6e5fea99596ccc0613e5ac5186c08d9cb6504793b670ca9f1642e8c0e69a577"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/diccionario_mediciones_directas.csv",
+    "sha256": "efc61e01ec09c1a92ca99e2350a71aa8a201eb5a9de6a836158fe6868c9da00f"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/distribucion_completa_respuestas.csv",
+    "sha256": "dcad61268dc96ee36b56abb097beca3798fe17610d0db3b4c31d2a3d81b3a971"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/inventario_variables_todas_oleadas.csv",
+    "sha256": "6f402d892e57e3b13d9a176f28ed54ad0c61563ad4ef301518dbe2032cdedc43"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/matriz_afirmaciones.csv",
+    "sha256": "b10922168e6a24838449fdfbc9f9462492d35c00fa9f79fa738aa3cadf9ea854"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/matriz_cobertura_constructos.csv",
+    "sha256": "fbcf3c868a32f6e6a1bf82a9e87ee740b9852317fb530b157e2aed4dc503bef7"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/matriz_documentacion_local.csv",
+    "sha256": "22853e5fe71abc420709e96cb36f776ca59d6a80e1c7b3910f949f96e4ec43d8"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelo_2024_coeficientes.csv",
+    "sha256": "4d936ef11199e9ba53d1f608fa1ea8667e5247149aa77db7ca98791e8f0c981e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelo_2024_pruebas_conjuntas.csv",
+    "sha256": "1c2ab7dc49c32af8f125d0427b61ee0b8bc4dee3360bcbdddc909e185258e8a7"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelo_2024_resumen.csv",
+    "sha256": "e016214570435a2f2a160d7912ffc5bcc49af5e643cf5dad9a6aaa0c0c008f93"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelo_2024_sensibilidad_no_linealidad.csv",
+    "sha256": "5300aac8c81898550dfa2fdf7fd63807b4dd7d87263993e3bdeb0219d4ea43be"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelos_multinomiales_derechos_2023_pruebas_conjuntas.csv",
+    "sha256": "5a19b3a7b15c24386324bf0f41e2568539a8aef70326c3bb6b6b92e573119bff"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelos_ordinales_derechos_2023_coeficientes.csv",
+    "sha256": "5c62b4a990be1a207a3112ef21db0a4ffa7a2fa0c413af63a2819fec0942ea07"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/modelos_ordinales_derechos_2023_pruebas_conjuntas.csv",
+    "sha256": "735e3bdafb261fb53b9dbf611a2d1028142fc27b3dceb62d36923f6cc181081e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/no_respuesta_por_perfil.csv",
+    "sha256": "da40f82bca74b7ba0433e0a78de17f77508abac808fb9c0777c34117b5348499"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/no_respuesta_y_limites_extremos.csv",
+    "sha256": "eef1d3b5dd0a61e955265ee9413715df03329da3620ec70ec0f3b4f6bdcf5b6a"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/perfil_muestra_23_oleadas.csv",
+    "sha256": "0644eb1819d38d064982f29420fadfb2003291b2dcd5d9ae32641afe52998dd8"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/perfiles_conjuntos_derechos_2023.csv",
+    "sha256": "dd7bded6b8979d0ad7d944201101daa40f8b96c80b39e45e22835408acb63128"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/pruebas_cruces_sensibilidad_srs.csv",
+    "sha256": "2bfed57625dda2822bd57fe14059a4958da3b147695dd3cf2af378309acc2078"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/pruebas_no_respuesta_sensibilidad_srs.csv",
+    "sha256": "1ac9d1ace721a0055263de62e17c92a464a2d49d6d6caa5261ce6f544fb48c15"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/pruebas_serie_justificacion_sensibilidad.csv",
+    "sha256": "de0006b707e49c47c90c846af7b2222cdf8d36c76a1b6b43dd10ed2244810ba7"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/registro_discrepancias.csv",
+    "sha256": "ee003fa0a7f0d01aba186c9fe4321efdbfaa682dfb78405a779962b8f9bef0c5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/resumen_indicadores_directos.csv",
+    "sha256": "295512a388b41c31051fe42e94e78ae963424dbca3eeb3b48de8e977517e10ab"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/resumen_modelos_ordinales_derechos_2023.csv",
+    "sha256": "ddece4d8a0790d0df7a8fd4e4c145f170b352a51b3136d0cc8f0894b0b759a2e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/sensibilidad_diseno_parcial_2023_2024.csv",
+    "sha256": "6b90c77d07676e43f77a530bd93c15627fbd665e9db58afe6522b946dbd6b9c5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/serie_justificacion_2002_2008.csv",
+    "sha256": "d722aeff110241f08b85146469a2a60c37750e6ab2e8473ebdced5ab028249a4"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/serie_matrimonio_2010_2023.csv",
+    "sha256": "43a7fed71a05f4011e6bb96ebcef48675cdd6c3c018f88aed20105f765105cb2"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/tasas_objetivo_por_perfil.csv",
+    "sha256": "512a6eb599c77948ce88001a299450c92a4bb202b738775c0527ced921f9416e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/auditoria_integridad_sin_confundir_NUMINVES.csv",
+    "sha256": "37eb1855a4b021ec07b18f5783ccbebd26fa5c619a49b1028582e468e0f59b79"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/coeficientes_ordinales_sin_umbrales.csv",
+    "sha256": "6812908e8470bf1645eea8bd78ace06ca7cdef8ae2a9b5bced9633bef83cbec8"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/conteo_pruebas_y_celdas_escasas.csv",
+    "sha256": "8bf7fc16bd9620530704d4858356fa73abf1678dc5a7f2292771db33a853232f"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/diccionario_mediciones_ampliado_2009.csv",
+    "sha256": "69e47dc77eec30bea3aea635f9d257f992cc0474948a1838ce48f0bf92c6d99a"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/distribuciones_recalculadas_14_items.csv",
+    "sha256": "37e19cc6ec98d2e962abd3b20dea727a5975419c9bcc536220625e3d682a069a"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/inventario_salidas_previas.csv",
+    "sha256": "5be44a0c92de06d426c2b75076421f41e24b36c3d14729cb3ac4d75c7f0641e4"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/justificabilidad_2002_2004_2008_2009.csv",
+    "sha256": "1eeea6e2448c7a3a862aaea150a78de1c42db7fbf592739a53e2c1d9f09ba829"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/matriz_muestreo_23_oleadas_cotejo_18.csv",
+    "sha256": "ceb67cc66eec877e7e314599cdec0b1a88c2ae9899370eab51642a7e07352d29"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/pares_prueba_signos_ordinales_2023.csv",
+    "sha256": "7adbd99ca126121c582f0f04bfb19fe8f05226874e2eeeb586b4c47b3dfcf7bb"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/umbrales_ordinales_separados.csv",
+    "sha256": "235a6db11309e6a1a726288e873f91034990615ef81f7856c62251b1a3a707b3"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/resultados/verificacion_denominadores_y_eventos.csv",
+    "sha256": "249aadedbe1e18e2422d85a6c5cb25064bda1f91dd6dae9de4bd4bb791ebc2f6"
+  }
+]

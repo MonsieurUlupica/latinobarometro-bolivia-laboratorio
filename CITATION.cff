@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite este laboratorio y, por separado, los datos de Corporación Latinobarómetro."
+type: software
+title: "Laboratorio de opinión pública sobre diversidad sexual y de género en Bolivia con Latinobarómetro 1996–2024"
+authors:
+  - family-names: "Porcel Inquillo"
+    given-names: "Jean Paolo"
+date-released: 2026-10-08
+url: "https://github.com/MonsieurUlupica/latinobarometro-bolivia-laboratorio"
+repository-code: "https://github.com/MonsieurUlupica/latinobarometro-bolivia-laboratorio"

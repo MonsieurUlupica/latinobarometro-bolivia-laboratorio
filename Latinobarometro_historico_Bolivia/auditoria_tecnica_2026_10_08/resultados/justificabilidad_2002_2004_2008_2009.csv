@@ -1,0 +1,5 @@
+"anio","n_total","n_valido","n_no_valido","media","mediana","n_1a4","n_5","n_6a10","pct_1a4","pct_5","pct_6a10","media_ponderada","n_kish","alcance"
+2002,1242,1109,133,2.49684400360685,1,897,63,149,80.8836789900812,5.68079350766456,13.4355275022543,2.38270357355562,555.080884105626,"Distribución observada; no supone identidad de cobertura poblacional entre años"
+2004,1201,999,202,3.46846846846847,3,660,138,201,66.0660660660661,13.8138138138138,20.1201201201201,3.32034377947804,838.22916091154,"Distribución observada; no supone identidad de cobertura poblacional entre años"
+2008,1200,1052,148,4.22243346007604,5,524,226,302,49.8098859315589,21.4828897338403,28.7072243346008,4.22243346007605,1052,"Distribución observada; no supone identidad de cobertura poblacional entre años"
+2009,1200,1051,149,4.10561370123692,4,549,262,240,52.2359657469077,24.9286393910561,22.8353948620362,4.10561370123692,1051,"Distribución observada; no supone identidad de cobertura poblacional entre años"

@@ -1,0 +1,5 @@
+"variable","n","categorias","logLik","AIC","convergio","estado"
+"P37CSN.A",881,4,-979.140472770966,1998.28094554193,TRUE,"Estimado como sensibilidad SRS; sin ponderación ni diseño completo"
+"P37CSN.B",874,4,-966.421164631176,1972.84232926235,TRUE,"Estimado como sensibilidad SRS; sin ponderación ni diseño completo"
+"P37CSN.F",868,4,-928.071107990022,1896.14221598004,TRUE,"Estimado como sensibilidad SRS; sin ponderación ni diseño completo"
+"P37WVSCS.H",798,4,-870.466631700624,1780.93326340125,TRUE,"Estimado como sensibilidad SRS; sin ponderación ni diseño completo"

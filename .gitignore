@@ -1,0 +1,17 @@
+**/datos_originales/
+**/datos_extraidos/
+**/documentacion/
+**/recuperadas/
+**/descargas_abiertas/
+**/*audit*ids*duplicados*
+**/auditoria_ids_duplicados.csv
+**/*.zip
+**/*.pdf
+**/*.sav
+**/*.dta
+**/*.rds
+**/*.RData
+**/.Rhistory
+**/.RData
+**/__pycache__/
+.DS_Store

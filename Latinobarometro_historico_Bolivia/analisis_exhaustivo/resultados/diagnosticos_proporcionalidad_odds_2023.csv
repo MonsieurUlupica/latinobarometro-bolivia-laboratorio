@@ -1,0 +1,5 @@
+"variable","n","logLik_PO","logLik_multinomial","LR_relajacion_PO","gl_relajacion_PO","p_relajacion_PO_srs","convergio_multinomial","diagnostico","p_relajacion_PO_holm_4_modelos"
+"P37CSN.A",881,-979.140472770966,-953.148080332561,51.984784876809,34,0.0248994825019335,TRUE,"No se rechaza proporcionalidad de odds después de Holm; no prueba que sea cierta",0.0995979300077339
+"P37CSN.B",874,-966.421164631176,-943.685304255858,45.471720750636,34,0.0903465202990021,TRUE,"No se rechaza proporcionalidad de odds después de Holm; no prueba que sea cierta",0.180693040598004
+"P37CSN.F",868,-928.071107990022,-909.610662240617,36.9208914988105,34,0.335439151196294,TRUE,"No se rechaza proporcionalidad de odds después de Holm; no prueba que sea cierta",0.335439151196294
+"P37WVSCS.H",798,-870.466631700624,-845.172489878687,50.5882836438757,34,0.0334357435645422,TRUE,"No se rechaza proporcionalidad de odds después de Holm; no prueba que sea cierta",0.100307230693627

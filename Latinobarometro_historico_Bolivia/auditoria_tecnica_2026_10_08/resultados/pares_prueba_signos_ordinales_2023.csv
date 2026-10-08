@@ -1,0 +1,7 @@
+"variable_a","variable_b","n_pares","mas_acuerdo_a","mas_acuerdo_b","empates","n_no_empates","p_signos_srs","alcance","p_holm_6"
+"P37CSN.A","P37CSN.B",1150,155,144,851,299,0.563124461273704,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.563124461273704
+"P37CSN.A","P37CSN.F",1124,159,352,613,511,0.00000000000000000814552496789059,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.0000000000000000407276248394529
+"P37CSN.A","P37WVSCS.H",1040,129,287,624,416,0.00000000000000657695229446687,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.0000000000000197308568834006
+"P37CSN.B","P37CSN.F",1124,137,353,634,490,0.0000000000000000000000514671540635031,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.000000000000000000000308802924381018
+"P37CSN.B","P37WVSCS.H",1041,126,292,623,418,0.000000000000000284084888444155,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.00000000000000113633955377662
+"P37CSN.F","P37WVSCS.H",1022,242,198,582,440,0.0402483196167204,"Prueba exacta de signos como sensibilidad de independencia; sin ajuste al diseño oficial",0.0804966392334408
