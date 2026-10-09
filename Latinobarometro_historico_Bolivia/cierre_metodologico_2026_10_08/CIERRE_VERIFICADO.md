@@ -67,6 +67,8 @@ Se creó un clon del repositorio público y se redescargaron los 23 ZIP nacional
 
 Archivos: `verificacion_redescarga_23.csv`, `reproduccion_clon_redescarga.csv`, `reproduccion_suplementaria_clon.csv`; código del último cotejo en `verificar_salidas_suplementarias.py`. Se publican código y agregados, no datos, textos de terceros, documentación individual ni el manuscrito. La solicitud técnica al productor está preparada y **no enviada**.
 
+Se corrigió la ruta de 2010 en el inventario: el archivo original realmente se llama `Latinobarometro_2010_Bolivia_Csv_esp_v12025.csv`. No se renombró ni editó el original. Las 23 rutas CSV del inventario actualizado existen; la reproducción había localizado el archivo efectivo por carpeta, no por el nombre erróneo anterior.
+
 ## Qué no puede resolverse mediante más cálculo sobre estos archivos
 
 Ficha detallada 2023, correspondencia integral unidades/etapas/probabilidades/cuotas, denominadores y disposición de contactos para tasas estándar, cuestionario español íntegro de 2009, explicación de N de 2000/2001 y unicidad de NUMENTRE en 2002/2006. Se detallan como necesidades documentales del productor en notas del manuscrito. No se afirma que no existan. Las capacidades causales, trayectorias individuales, identificación de población LGBTIQ+ y sesgo no observado tampoco aparecen por aumentar el número de pruebas.

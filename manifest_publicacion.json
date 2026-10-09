@@ -13,7 +13,7 @@
   },
   {
     "path": "Latinobarometro_historico_Bolivia/inventario_archivos.csv",
-    "sha256": "adc95f0f8827643ff5021194b7276c12b051e558c1a94f0e1bbde728c0e3e907"
+    "sha256": "6d33745d61fa9e1854e9fb34b0f99017768c97b66ce3363ec12f523a3426ce59"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/analisis_exploratorio/analisis_exploratorio.R",
@@ -53,7 +53,7 @@
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/CIERRE_VERIFICADO.md",
-    "sha256": "fa104b5f31e518bd3393d4cf2bdf18c131e8f6cf88f2fc1d9681c9206e77daf1"
+    "sha256": "0285fc61aeea8df9e619b4f637572f0d4255a0face503851e4a7cf65e7c52167"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md",
