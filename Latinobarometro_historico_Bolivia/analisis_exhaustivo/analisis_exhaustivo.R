@@ -4,7 +4,7 @@
 options(stringsAsFactors = FALSE, scipen = 999)
 ROOT <- "Latinobarometro_historico_Bolivia"
 if (!dir.exists(ROOT) && dir.exists("../datos_extraidos")) ROOT <- ".."
-OUT <- file.path(ROOT, "analisis_exhaustivo")
+OUT <- Sys.getenv("LB_OUTPUT_DIR", unset=file.path(ROOT, "analisis_exhaustivo"))
 RES <- file.path(OUT, "resultados")
 FIG <- file.path(OUT, "figuras")
 dir.create(RES, recursive = TRUE, showWarnings = FALSE)
@@ -151,6 +151,10 @@ write_csv(special_codes, "codigos_candidatos_especiales.csv")
 # Inventario documental local por año; la matriz distingue documento encontrado
 # de verificación sustantiva de la pregunta.
 docfiles <- list.files(file.path(ROOT, "documentacion"), full.names = TRUE)
+docfiles <- unique(c(docfiles,
+ list.files(file.path(ROOT,"cierre_metodologico_2026_10_08","documentacion"),pattern="\\.pdf$",full.names=TRUE),
+ "04_Hallazgos_y_Analisis/bibliografia_textos/descargas_abiertas/Latinobarometro_2009_Libro_Codigos_Oficial.pdf"))
+docfiles <- docfiles[file.exists(docfiles)]
 doc_matrix <- do.call(rbind, lapply(YEARS, function(y) {
   these <- docfiles[grepl(as.character(y), basename(docfiles), fixed = TRUE)]
   q <- these[grepl("cuestionario|questionnaire", basename(these), ignore.case = TRUE)]
@@ -159,7 +163,7 @@ doc_matrix <- do.call(rbind, lapply(YEARS, function(y) {
              cuestionario_disponible = length(q) > 0,
              libro_codigos_local = paste(basename(cb), collapse = " | "),
              libro_codigos_disponible = length(cb) > 0,
-             nota = if (y == 2015) "Cuestionario y codebook oficial consultados en línea; no están archivados en la carpeta local." else
+             nota = if (y == 2009) "Cuestionario inglés y libro de códigos español archivados; falta cuestionario español para identidad literal." else
                if (y == 2024) "El PDF local de resultados por país complementa el cuestionario." else "Inventario automático de archivos locales; revisar lista para materiales con nombres no anuales.",
              stringsAsFactors = FALSE)
 }))
@@ -192,17 +196,17 @@ items <- data.frame(
   codigo_objetivo = c("1","ninguno; escala ordinal","ninguno; escala ordinal","7","ninguno; escala ordinal","13","1–2","1–2",
                       "1–2","1–2","1–2","1–2","1"),
   fuente_local = c("Cuestionario_1998_ES.pdf, NP63A.Homosexuales; Libro_codigos_1998_ES.pdf",
-                   "Libro_codigos_2002_ES.pdf, P52WVSC (pág. impresa 49)",
-                   "Libro_codigos_2004_ES.pdf, P38STA (pág. impresa 29)",
-                   "Libro_codigos_2006_ES.pdf, P46STM (pág. impresa 23)",
-                   "Libro_codigos_2008_ES.pdf, P64WVSST (pág. impresa 41)",
-                   "Libro_codigos_2008_ES.pdf, anexo PA505201 (pág. impresa 75)",
+                   "Libro_codigos_2002_ES.pdf, P52WVSC, página física 37",
+                   "Libro_codigos_2004_ES.pdf, P38STA, página física 23",
+                   "Libro_codigos_2006_ES.pdf, P46STM, página física 24",
+                   "Libro_codigos_2008_ES.pdf, P64WVSST, página física 29",
+                   "Libro_codigos_2008_ES.pdf, P68ST, página física 31; anexo de categorías PA505201",
                    "Libro_codigos_2010_ES.pdf, P14N.G; Cuestionario_2010_ES.pdf",
-                   "Libro de códigos oficial 2015, P69ST.C (pág. impresa 29), fuente oficial en línea",
-                   "Libro_codigos_2023_ES.pdf, P37CSN.A (pág. impresa 156)",
-                   "Libro_codigos_2023_ES.pdf, P37CSN.B (pág. impresa 157)",
-                   "Libro_codigos_2023_ES.pdf, P37CSN.F (pág. impresa 161)",
-                   "Libro_codigos_2023_ES.pdf, P37WVSCS.H (pág. impresa 163)",
+                   "Libro_codigos_2015_ES.pdf, P69ST.C; edición oficial v20190707 archivada",
+                   "Libro_codigos_2023_ES.pdf, P37CSN.A, página física 24 (156 es posición de campo)",
+                   "Libro_codigos_2023_ES.pdf, P37CSN.B, página física 25 (157 es posición de campo)",
+                   "Libro_codigos_2023_ES.pdf, P37CSN.F, página física 25 (161 es posición de campo)",
+                   "Libro_codigos_2023_ES.pdf, P37WVSCS.H, página física 26 (163 es posición de campo)",
                    "latinobarometro-2024-cuestionario-esp.pdf, P3NOIJ; resultados por país"),
   regla_no_respuesta = c("Sin código especial documentado en el ítem; conservar 0 y 1",
                          "-1 No sabe; -2 No contesta; -4 No preguntada; -5 Otras respuestas",
@@ -232,12 +236,21 @@ items <- data.frame(
                      "Medida de distancia social en batería múltiple; no fusionar con 1998 sin cautela"),
   stringsAsFactors = FALSE
 )
+# Integra 2009 en el generador principal, conservando las salidas previas archivadas.
+extra09 <- items[items$anio==2008 & items$constructo=="justificacion_moral",]
+extra09$anio <- 2009
+extra09$variable <- "P63WVSST"
+extra09$fuente_local <- "Libro de códigos oficial 2009 y cuestionario inglés oficial Q63WVSST; expediente cierre_metodologico_2026_10_08"
+extra09$comparabilidad <- "Escala 1–10; cotejo de tarjeta e instrucción en cuestionario inglés. Falta versión española para certificar identidad literal."
+items <- rbind(items,extra09)
+items <- items[order(items$anio),]
+items$regla_no_respuesta[items$anio==2023] <- "-5 etiquetado No sabe / No contesta en SPSS oficial 2023; fuera de 1–4. El cuestionario usa 0 antes de armonización."
 write_csv(items, "diccionario_mediciones_directas.csv")
 
 valid_codes <- function(item, x, d) {
   y <- item$anio; v <- item$variable; x <- as_num(x)
   if (y == 1998 && v == "NP63A") return(x %in% c(0,1))
-  if (y %in% c(2002,2004,2008) && item$constructo == "justificacion_moral") return(x %in% 1:10)
+  if (y %in% c(2002,2004,2008,2009) && item$constructo == "justificacion_moral") return(x %in% 1:10)
   if (y == 2006) return(x %in% 1:15)
   if (y == 2008 && v == "P68ST") return(x %in% c(1:20,96,97))
   if (y %in% c(2010,2015,2023) && item$constructo %in% c("matrimonio","derechos_2023")) return(x %in% 1:4)
@@ -408,7 +421,8 @@ for (construct in c("matrimonio","justificacion_moral")) {
     }
   }
 }
-write_csv(do.call(rbind,just_series_rows),"serie_justificacion_2002_2008.csv")
+write_csv(do.call(rbind,just_series_rows),"serie_justificacion_2002_2009.csv")
+write_csv(do.call(rbind,just_series_rows)[vapply(just_series_rows,function(z)z$anio<=2008,TRUE),],"serie_justificacion_2002_2008.csv")
 write_csv(do.call(rbind,marriage_series_rows),"serie_matrimonio_2010_2023.csv")
 
 # Pruebas ordinales como sensibilidad SRS exploratoria, no como inferencia del diseño.
@@ -481,7 +495,7 @@ write_csv(right_dim,"diagnostico_dimension_comun_2023.csv")
 covmap <- list(
   `1998`=c(sexo="S1",edad="S2"), `2002`=c(sexo="S1",edad="S2"),
   `2004`=c(sexo="S1",edad="S2"), `2006`=c(sexo="SEXO",edad="S7"),
-  `2008`=c(sexo="S8",edad="S9"), `2010`=c(sexo="SEXO",edad="EDAD"),
+  `2008`=c(sexo="S8",edad="S9"), `2009`=c(sexo="S5",edad="S6"), `2010`=c(sexo="SEXO",edad="EDAD"),
   `2015`=c(sexo="S12",edad="S13"), `2023`=c(sexo="SEXO",edad="EDAD"),
   `2024`=c(sexo="SEXO",edad="EDAD")
 )
@@ -522,6 +536,10 @@ region_names <- c("68001"="Beni","68002"="Chuquisaca","68003"="Cochabamba","6800
 education_names <- c("1"="Analfabeto","2"="Básica incompleta","3"="Básica completa",
                      "4"="Secundaria incompleta","5"="Secundaria completa",
                      "6"="Superior incompleta","7"="Superior completa")
+# Sensibilidad condicional de Pearson por Monte Carlo en tablas mayores escasas.
+# Semilla fija y B explícito para reproducción; no equivale a ajuste al diseño.
+set.seed(20261008)
+MC_B <- 200000L
 cross_rows<-list(); test_cross<-list(); nonresp_cross<-list(); nonresp_tests<-list(); rate_rows<-list()
 for (i in seq_len(nrow(items))) {
   it<-items[i,,drop=FALSE]; y<-it$anio; d<-DATA[[as.character(y)]]
@@ -597,6 +615,9 @@ for (i in seq_len(nrow(items))) {
         minexp<-min(ch$expected)
         if (all(dim(tt)==c(2,2)) && minexp<5) {
           ppval<-fisher.test(tt)$p.value; method<-"Fisher exacta SRS (solo tablas 2x2)"
+        } else if (minexp<5) {
+          ppval<-chisq.test(tt,simulate.p.value=TRUE,B=MC_B)$p.value
+          method<-"Pearson Monte Carlo condicional, B=200000; sensibilidad independencia"
         } else {ppval<-ch$p.value; method<-"Chi-cuadrado Pearson SRS aproximada"}
         test_cross[[length(test_cross)+1L]]<-data.frame(anio=y,variable=dat_item$item$variable,constructo=it$constructo,
           predictor=pn,variable_predictor=actual,n=sum(tt),estadistico=unname(ch$statistic),gl=unname(ch$parameter),
@@ -625,6 +646,7 @@ for (i in seq_len(nrow(items))) {
       if (nrow(nrt)>1 && ncol(nrt)>1) {
         nch<-suppressWarnings(chisq.test(nrt,correct=FALSE)); nmin<-min(nch$expected)
         if(all(dim(nrt)==c(2,2)) && nmin<5){npv<-fisher.test(nrt)$p.value;nmethod<-"Fisher exacta SRS"}
+        else if(nmin<5){npv<-chisq.test(nrt,simulate.p.value=TRUE,B=MC_B)$p.value;nmethod<-"Pearson Monte Carlo condicional, B=200000; sensibilidad independencia"}
         else {npv<-nch$p.value;nmethod<-"Chi-cuadrado SRS aproximada"}
         nonresp_tests[[length(nonresp_tests)+1L]]<-data.frame(anio=y,variable=dat_item$item$variable,predictor=pn,n=sum(nrt),
           estadistico=unname(nch$statistic),gl=unname(nch$parameter),p_srs=npv,minimo_esperado=nmin,metodo=nmethod,
@@ -727,7 +749,7 @@ write_csv(nonlinearity_tests,"modelo_2024_sensibilidad_no_linealidad.csv")
 # Modelos ordinales de sensibilidad para los cuatro derechos de 2023. La escala
 # queda ordenada desde desacuerdo fuerte (4) hasta acuerdo fuerte (1), de modo
 # que OR>1 representa mayores odds de ubicarse hacia más acuerdo.
-ordinal_coef_rows<-list(); ordinal_joint_rows<-list(); multinom_joint_rows<-list(); ordinal_diag_rows<-list(); ordinal_summary_rows<-list()
+ordinal_coef_rows<-list(); ordinal_joint_rows<-list(); multinom_joint_rows<-list(); ordinal_diag_rows<-list(); ordinal_summary_rows<-list(); ordinal_threshold_rows<-list()
 if(requireNamespace("MASS",quietly=TRUE) && requireNamespace("nnet",quietly=TRUE)) {
   d23<-DATA[["2023"]]
   ord_data<-data.frame(
@@ -755,7 +777,9 @@ if(requireNamespace("MASS",quietly=TRUE) && requireNamespace("nnet",quietly=TRUE
       next
     }
     smpo<-summary(mpo)$coefficients
-    slope_rows<-rownames(smpo)[!grepl("\\|",rownames(smpo),fixed=TRUE)]
+    cuts<-smpo[grepl("|",rownames(smpo),fixed=TRUE),,drop=FALSE]
+    ordinal_threshold_rows[[length(ordinal_threshold_rows)+1L]]<-data.frame(variable=v,termino=rownames(cuts),beta=cuts[,1],se_modelo=cuts[,2],n=sum(use),row.names=NULL)
+    slope_rows<-rownames(smpo)[!grepl("|",rownames(smpo),fixed=TRUE)]
     smpo<-smpo[slope_rows,,drop=FALSE]
     coef_df<-data.frame(variable=v,termino=rownames(smpo),beta=smpo[,1],se_modelo=smpo[,2],z=smpo[,3],p_srs=2*pnorm(abs(smpo[,3]),lower.tail=FALSE),
       OR=exp(smpo[,1]),OR_ic95_inf=exp(smpo[,1]-1.96*smpo[,2]),OR_ic95_sup=exp(smpo[,1]+1.96*smpo[,2]),n=sum(use),
@@ -808,6 +832,7 @@ if(nrow(ordinal_diag)) {
       "No se rechaza proporcionalidad de odds después de Holm; no prueba que sea cierta"))
 }
 write_csv(ordinal_coef,"modelos_ordinales_derechos_2023_coeficientes.csv")
+write_csv(do.call(rbind,ordinal_threshold_rows),"modelos_ordinales_derechos_2023_umbrales.csv")
 write_csv(ordinal_joint,"modelos_ordinales_derechos_2023_pruebas_conjuntas.csv")
 write_csv(multinom_joint,"modelos_multinomiales_derechos_2023_pruebas_conjuntas.csv")
 write_csv(ordinal_diag,"diagnosticos_proporcionalidad_odds_2023.csv")
@@ -867,6 +892,9 @@ issues<-rbind(issues,data.frame(
     "Usar cortes derivados de edad exacta y conservar S13 como fuente. La recodificación se declara en cruces y código.",
     "Para toda tabla de distancia social 2024 usar P3NOIJ.9=0 como criterio de respuesta válida y reportar por separado 174 NS/NR."),
   stringsAsFactors=FALSE))
+issues$severidad[issues$anio==2023 & issues$tipo=="no respuesta"]<-"Resuelto mediante SPSS oficial"
+issues$accion[issues$anio==2023 & issues$tipo=="no respuesta"]<-"SPSS etiqueta -5 No sabe / No contesta; cotejo de diez campos con CSV, conservando especiales mediante user_na=TRUE. Excluir -5 de 1–4 y preservar distribución cruda."
+issues$accion[issues$anio==2023 & issues$tipo=="edad/universo"]<-"Informe oficial declara 18 años y más; mínimo observado 18. La etiqueta agregada 16–25 no es el universo ni demuestra entrevistas a menores. Ficha boliviana detallada aún no localizada."
 write_csv(issues,"registro_discrepancias.csv")
 
 design_source <- rep("Ficha técnica consolidada oficial 1995–2015 (cotejar ficha específica del país)",length(YEARS))
@@ -876,7 +904,7 @@ design_source[YEARS==2001] <- "Ficha técnica individual oficial 2001"
 design_source[YEARS==2002] <- "Ficha técnica oficial 2002"
 design_source[YEARS==2010] <- "Informe metodológico oficial 2010"
 design_source[YEARS==2013] <- "Informe metodológico oficial 2013"
-design_source[YEARS==2017] <- "Página oficial de datos 2017; ficha país pendiente de cotejo"
+design_source[YEARS==2017] <- "Informe oficial 2017, ficha Bolivia página física 66"
 design_source[YEARS==2018] <- "Informe metodológico oficial 2018"
 design_source[YEARS==2020] <- "Informe metodológico oficial 2020"
 design_source[YEARS==2023] <- "Página/documentación oficial 2023; ficha boliviana independiente no localizada localmente"
@@ -888,7 +916,7 @@ design_link[YEARS==2001] <- "https://www.latinobarometro.org/documents/LAT-2001/
 design_link[YEARS==2002] <- "https://www.latinobarometro.org/documents/LAT-2002/fichatecnica-latinobarometro-2002.pdf"
 design_link[YEARS==2010] <- "https://www.latinobarometro.org/documents/LAT-2010/informemetodologico-latinobarometro-2010.pdf"
 design_link[YEARS==2013] <- "https://www.latinobarometro.org/documents/LAT-2013/informemetodologico-latinobarometro-2013.pdf"
-design_link[YEARS==2017] <- "https://www.latinobarometro.org/latinobarometro-2017"
+design_link[YEARS==2017] <- "https://www.latinobarometro.org/documents/LAT-2017/informe-latinobarometro-2017.pdf"
 design_link[YEARS==2018] <- "https://www.latinobarometro.org/documents/LAT-2018/informemetodologico-latinobarometro-2018.pdf"
 design_link[YEARS==2020] <- "https://www.latinobarometro.org/documents/LAT-2020/latinobarometro-2020-metodologico.pdf"
 design_link[YEARS==2023] <- "https://latinobarometro.org/latinobarometro-2023"
@@ -927,10 +955,10 @@ barplot(rs$pct_objetivo_valido,names.arg=lab,las=2,col="#4E8578",border=NA,ylim=
   main="Acuerdo por ámbito de derecho, 2023",ylab="Porcentaje de respuestas válidas")
 abline(h=50,lty=2,col="grey40"); dev.off()
 png(file.path(FIG,"justificacion_ordinal.png"),width=1400,height=700,res=130)
-jd<-do.call(rbind,lapply(c(2002,2004,2008),function(y){it<-items[items$anio==y & items$constructo=="justificacion_moral",];a<-item_data[[paste(y,find_col(DATA[[as.character(y)]],it$variable),sep="_")]];x<-a$x[a$valid];prop.table(table(factor(x,levels=1:10)))}))
+jd<-do.call(rbind,lapply(c(2002,2004,2008,2009),function(y){it<-items[items$anio==y & items$constructo=="justificacion_moral",];a<-item_data[[paste(y,find_col(DATA[[as.character(y)]],it$variable),sep="_")]];x<-a$x[a$valid];prop.table(table(factor(x,levels=1:10)))}))
 oldpar<-par(mar=c(5,4,4,10),xpd=NA); just_cols<-grDevices::hcl.colors(10,"YlOrRd",rev=TRUE)
 barplot(t(as.matrix(jd))*100,beside=FALSE,col=just_cols,
-  names.arg=c("2002","2004","2008"),
+  names.arg=c("2002","2004","2008","2009"),
   main="Distribución ordinal de justificación moral",ylab="Porcentaje válido")
 legend("topright",inset=c(-.23,0),legend=paste("Respuesta",1:10),fill=just_cols,cex=.72,bty="n")
 par(oldpar)
@@ -1063,7 +1091,7 @@ write_csv(claims,"matriz_afirmaciones.csv")
 report<-c(
 "# Dossier analítico exhaustivo de Latinobarómetro Bolivia, 1996–2024",
 "",
-"**Estado:** análisis reproducible de 23 cortes transversales repetidos. No se editó el artículo ni ningún archivo LaTeX. Las bases originales se preservaron.",
+"**Estado:** análisis reproducible de 23 cortes transversales repetidos, actualizado con 2009. Las bases originales se preservaron. El cierre documental y los diagnósticos adicionales están en `cierre_metodologico_2026_10_08`.",
 "",
 "## Alcance y regla de evidencia",
 "",
@@ -1080,16 +1108,16 @@ paste0("N total en microdatos = ",format(sum(wave_audit$filas_leidas),big.mark="
 "Aparecen dos filas con `NUMENTRE` repetido en 2002 y otras dos en 2006; no son filas idénticas. Se conservan sin deduplicación, ya que corregirlas requiere el archivo de origen o respuesta del custodio. En 1996 no se identificó `NUMENTRE` ni `NUMINVES` inequívoco. La auditoría de tamaños detectó una discrepancia mayor en 2000, cuyo CSV tiene 1.080 filas y código de país 68 en todas, frente a 1.000 casos en la ficha; en 2001 el CSV tiene 1.075 frente a 1.080 en la ficha. Se exponen en `auditoria_n_microdato_vs_documentacion.csv` y `registro_discrepancias.csv`, sin ajustar los conteos del archivo.",
 "En 2000 no hay columna de ponderación en el CSV. Los pesos candidatos son constantes 1 en la mayoría de las oleadas y variables en 1998 y 2002–2005. La ficha 2016 indica que el ponderador no aplica y su WT constante vale 1.",
 "",
-paste0("La matriz `matriz_documentacion_local.csv` lista cuestionarios y libros de códigos encontrados en el proyecto. Hay cuestionario local para ",docs_q_n," de 23 oleadas y codebook local para ",docs_cb_n,". Para 2015 se usó el codebook oficial en línea, que deberá archivarse antes del cierre editorial; 2009 no tiene cuestionario ni codebook local identificado. Las brechas documentales no se rellenaron por analogía."),
+paste0("La matriz `matriz_documentacion_local.csv` lista cuestionarios y libros de códigos encontrados en el proyecto. Hay cuestionario local para ",docs_q_n," de 23 oleadas y codebook local para ",docs_cb_n,". En 2009 se recuperó el cuestionario inglés y el libro de códigos español; falta el cuestionario español para comprobar identidad literal de redacción. El libro de códigos 2015 está archivado en el expediente de cierre. Disponibilidad no equivale a cotejo completo."),
 "",
 "## Cobertura de mediciones directas",
 "",
-"Hay nueve oleadas con una o más preguntas directas: 1998, 2002, 2004, 2006, 2008, 2010, 2015, 2023 y 2024. Las otras catorce no contienen una medición directa localizada en los cuestionarios disponibles. La matriz de cobertura separa las cinco familias de medición.",
+"El corpus principal contiene catorce ítems en diez oleadas: 1998, 2002, 2004, 2006, 2008, 2009, 2010, 2015, 2023 y 2024. Las otras trece no aportan una medición directa incluida. El expediente de cierre registra un hallazgo vecinal adicional de 2009, fuera de la serie principal por su cotejo literal incompleto.",
 "",
 "| Familia | Oleadas | Interpretación permitida |",
 "|---|---|---|",
 "| Distancia social | 1998, 2024 | Mención de homosexuales entre grupos no deseados como vecinos; las baterías no son idénticas |",
-"| Justificación moral | 2002, 2004, 2008 | Escala ordinal 1–10, donde 1 nunca se justifica y 10 siempre se justifica |",
+"| Justificación moral | 2002, 2004, 2008, 2009 | Escala ordinal 1–10; contexto inglés de 2009 revisado, texto español pendiente |",
 "| Saliencia de discriminación | 2006, 2008 | Selección única de una categoría; no mide experiencia propia ni incidencia |",
 "| Matrimonio igualitario | 2010, 2015, 2023 | Escala de acuerdo de cuatro categorías; cortes separados |",
 "| Cuatro ámbitos de derechos | 2023 | Adopción, matrimonio, reconocimiento documental y parentalidad, mismas personas |",
@@ -1138,7 +1166,7 @@ paste0("En 2006, ",salience06$conteo_objetivo," de ",salience06$n_valido," respu
 "",
 "## Asociaciones, modelos y pruebas",
 "",
-"`cruces_descriptivos_completos.csv` contiene tablas completas para sexo y edad en las oleadas con medición directa, más ideología, religión, práctica religiosa, ingreso subjetivo, clase, educación y territorio para 2023/2024 cuando esos campos están disponibles. `auditoria_covariables_cruces.csv` conserva el nombre y la regla de cada predictor. `pruebas_cruces_sensibilidad_srs.csv` registra estadístico, p, mínimo esperado y prueba utilizada. Los p-values se ajustan por Holm dentro de cada familia año-constructo. Para celdas esperadas pequeñas se marca la limitación o se usa Fisher en tablas 2×2.",
+"`cruces_descriptivos_completos.csv` contiene tablas completas para sexo y edad en las oleadas con medición directa, más ideología, religión, práctica religiosa, ingreso subjetivo, clase, educación y territorio para 2023/2024 cuando esos campos están disponibles. `auditoria_covariables_cruces.csv` conserva el nombre y la regla de cada predictor. Las pruebas se ajustan por Holm dentro de año-constructo; para tablas mayores escasas se utiliza Monte Carlo condicional con 200.000 replicaciones, y Fisher para 2×2 escasas.",
 "",
 paste0("El modelo logístico 2024 estima asociaciones entre mención de distancia social y sexo, edad, educación, práctica religiosa, ideología, ingreso/clase y conteo de otros grupos excluidos. El conteo se construye excluyendo el grupo objetivo y la categoría de sustancias/alcohol, para evitar parte-todo y la categoría de altísima prevalencia. Es un modelo no ponderado de casos completos, con intervalo Wald/modelo bajo supuestos SRS y no causal. Se compararon especificaciones lineales con splines naturales para edad e ideología; las p ajustadas de no linealidad son ",nonlinearity_text,". Coeficientes y diagnósticos están en `modelo_2024_coeficientes.csv`, `modelo_2024_pruebas_conjuntas.csv`, `modelo_2024_sensibilidad_no_linealidad.csv` y `modelo_2024_resumen.csv`."),
 "",
@@ -1148,7 +1176,7 @@ paste0("Además del cruce dicotómico, se estimaron modelos ordinales logístico
 "",
 "### Resultados interpretables de los cruces",
 "",
-paste0("En 2023, el acuerdo con matrimonio es ",fmt(sex23_mar_w),"% entre mujeres y ",fmt(sex23_mar_m),"% entre hombres; para la afirmación sobre parentalidad es ",fmt(sex23_parent_w),"% y ",fmt(sex23_parent_m),"%. Las pruebas SRS ajustadas por Holm identifican diferencias por sexo registrado en matrimonio (p ajustada <0,001) y parentalidad (p ajustada <0,01), no en todos los derechos. Por edad, las diferencias también se concentran en adopción (",fmt(age23_adopt_y),"% en 15–29 frente a ",fmt(age23_adopt_old),"% en 45–59), matrimonio (",fmt(age23_mar_y),"% en 15–29 frente a ",fmt(age23_mar_old),"% en 60+) y parentalidad (",fmt(age23_parent_y),"% en 15–29 frente a ",fmt(age23_parent_old),"% en 60+). Son asociaciones entre grupos de una muestra de cuotas; no efectos causales ni estimaciones design-completas."),
+paste0("En 2023, el acuerdo con matrimonio es ",fmt(sex23_mar_w),"% entre mujeres y ",fmt(sex23_mar_m),"% entre hombres; para la afirmación sobre parentalidad es ",fmt(sex23_parent_w),"% y ",fmt(sex23_parent_m),"%. Las pruebas SRS ajustadas por Holm identifican diferencias por sexo registrado en matrimonio (p ajustada <0,001) y parentalidad (p ajustada <0,01), no en todos los derechos. Por edad, las diferencias también se concentran en adopción (",fmt(age23_adopt_y),"% en 15–29 frente a ",fmt(age23_adopt_old),"% en 45–59), matrimonio (",fmt(age23_mar_y),"% en 15–29 frente a ",fmt(age23_mar_old),"% en 60+) y parentalidad (",fmt(age23_parent_y),"% en 15–29 frente a ",fmt(age23_parent_old),"% en 60+). Son asociaciones entre respuestas observadas; no efectos causales ni estimaciones de diseño completo."),
 "",
 paste0("En 2024, la mención de homosexuales como vecinos no deseados alcanza ",fmt(male24),"% entre hombres y ",fmt(female24),"% entre mujeres. El modelo ajustado estima para mujeres OR=",fmt(sex24coef$OR,2)," (IC95 modelo ",fmt(sex24coef$OR_ic95_inf,2),"–",fmt(sex24coef$OR_ic95_sup,2),"), con p de Wald SRS=",formatC(sex24coef$p_srs,format="e",digits=2),"; la prueba conjunta del predictor da p Holm=",formatC(get_joint_p("sexo"),format="e",digits=2),". La relación persiste al ajustar covariables observadas. El resultado describe sexo registrado, no identidad de género."),
 "",
@@ -1166,7 +1194,7 @@ paste0("La no respuesta en parentalidad alcanza 150/1.200 (12,5%), frente a 2,7%
 "",
 "## Discrepancias verificadas y límites de afirmación",
 "",
-"1. El microdato 2023 usa -5 en las cuatro preguntas de derechos donde cuestionario y codebook indican 0 para NS/NR. Se excluye -5 del denominador sustantivo y se preserva el código en los resultados crudos.",
+"1. El microdato 2023 usa -5 en las cuatro preguntas de derechos donde cuestionario y codebook indican 0 para NS/NR. El SPSS oficial etiqueta -5 como No sabe / No contesta; sus diez campos cotejados coinciden con los 1.200 registros del CSV. Se excluye -5 de respuestas 1–4 y se preserva su código crudo.",
 "2. En 2023, la edad observada en la muestra boliviana va de 18 a 84 años, mientras la etiqueta agrupada REEDAD del codebook empieza en 16–25. No se atribuye la diferencia a errores de entrevista; se documenta para cotejar con la ficha país.",
 "3. Los ponderadores candidatos varían solo en algunas bases. En 2000 no hay campo de peso; en 2016 WT=1 y la documentación indica que no aplica. No se asume que un campo llamado WT garantice la reconstrucción del diseño.",
 "4. Las fichas de 2024 describen muestreo de cuatro etapas con cuotas en la última. Las cuotas restringen el alcance de la inferencia probabilística convencional.",
@@ -1177,7 +1205,7 @@ paste0("La no respuesta en parentalidad alcanza 150/1.200 (12,5%), frente a 2,7%
 "",
 "La auditoría de integridad cubre las 23 bases disponibles y verifica filas y columnas contra el inventario; las familias de preguntas directas, sus códigos de respuesta y denominadores están trazados en el diccionario y archivos de cobertura. Se ejecutaron distribuciones, pruebas pareadas, cruces exhaustivos para los predictores preseleccionados, un barrido exploratorio con ajuste Holm, modelos ordinales/multinomiales para derechos 2023 y una logística para distancia social 2024. El código regenera tablas y figuras desde los CSV originales.",
 "",
-"La investigación todavía no alcanza un cierre inferencial plenamente defendible. Hay 2000 y 2001 con tamaños de microdato distintos de sus fichas; no se deben tratar como poblaciones muestrales resueltas. Para ninguna oleada se reconstruyó con certeza todo el diseño oficial a partir de los archivos disponibles. El codebook 2015 aún debe archivarse localmente, 2009 carece de documentación local identificada y la medición común de derechos 2023 no cuenta con una CFA ordinal. En consecuencia, los modelos y pruebas se reportan como sensibilidades SRS, no como estimaciones de diseño oficial. Estas tareas pendientes se detallan en `registro_discrepancias.csv`, `matriz_documentacion_local.csv` y `auditoria_diseno_y_fuentes.csv`.",
+"El cierre verifica descripción y cobertura muestral en 22 de 23 ediciones; 2023 conserva un cotejo parcial de universo y modalidad, con sección muestral vacía en el catálogo consultado. Se resolvió la etiqueta -5, se homologaron sexo/edad de diez muestras y se ejecutaron diagnósticos de celdas escasas y selección por casos completos. Persisten discrepancias de N en 2000/2001, identidad literal española de 2009 y falta de correspondencia integral entre unidades de selección y microdato. Estas condiciones limitan inferencia poblacional, sin invalidar la descripción de respuestas observadas. No se presenta una CFA ordinal como tarea resuelta ni se necesita una para describir ítems por separado.",
 "",
 "## Argumentos sostenibles para el artículo",
 "",

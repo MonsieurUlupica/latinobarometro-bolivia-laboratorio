@@ -31,7 +31,7 @@ extra$anio <- 2009
 extra$variable <- "P63WVSST"
 extra$fuente_local <- "04_Hallazgos_y_Analisis/bibliografia_textos/descargas_abiertas/Latinobarometro_2009_Libro_Codigos_Oficial.pdf; P63WVSST"
 extra$comparabilidad <- "Mismos extremos 1–10 en el libro de códigos; contexto y universo requieren cotejo antes de inferencia temporal homogénea"
-items <- rbind(items,extra)
+if(!any(items$anio==2009 & items$variable=="P63WVSST")) items <- rbind(items,extra)
 items <- items[order(items$anio),]
 save_table(items,"diccionario_mediciones_ampliado_2009.csv")
 data <- setNames(lapply(sort(unique(items$anio)),read_wave),sort(unique(items$anio)))
@@ -78,6 +78,7 @@ save_table(morality,"justificabilidad_2002_2004_2008_2009.csv")
 coef<-read.csv(file.path(old,"modelos_ordinales_derechos_2023_coeficientes.csv"))
 threshold<-grepl("|",coef$termino,fixed=TRUE)
 cuts<-coef[threshold,c("variable","termino","beta","se_modelo","n")]
+if(file.exists(file.path(old,"modelos_ordinales_derechos_2023_umbrales.csv"))) cuts<-read.csv(file.path(old,"modelos_ordinales_derechos_2023_umbrales.csv"))
 save_table(cuts,"umbrales_ordinales_separados.csv")
 slopes<-coef[!threshold,]
 slopes$p_holm_coef<-ave(slopes$p_srs,slopes$variable,FUN=function(z)p.adjust(z,"holm"))

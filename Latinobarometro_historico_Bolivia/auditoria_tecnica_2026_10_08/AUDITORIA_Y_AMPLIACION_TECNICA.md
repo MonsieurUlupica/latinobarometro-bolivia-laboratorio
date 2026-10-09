@@ -1,5 +1,7 @@
 # Auditoría del análisis y ampliación técnica del artículo
 
+> Estado histórico de la primera auditoría. El cierre posterior actualiza cuatro cotejos muestrales, la etiqueta −5, el código principal y los diagnósticos. Consultar `../cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md` para pendientes vigentes. Las observaciones de este informe no se presentan como el estado final del laboratorio.
+
 Fecha de revisión 8 de octubre de 2026.
 
 ## Alcance y estado

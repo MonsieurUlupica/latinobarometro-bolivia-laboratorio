@@ -11,7 +11,7 @@
 2006,TRUE,"P46STM","saliencia_discriminacion","Medición directa; respetar familia y comparabilidad"
 2007,FALSE,"","","Solo contexto general; no mide opinión LGBTIQ+"
 2008,TRUE,"P64WVSST | P68ST","justificacion_moral | saliencia_discriminacion","Medición directa; respetar familia y comparabilidad"
-2009,FALSE,"","","Solo contexto general; no mide opinión LGBTIQ+"
+2009,TRUE,"P63WVSST","justificacion_moral","Medición directa; respetar familia y comparabilidad"
 2010,TRUE,"P14N.G","matrimonio","Medición directa; respetar familia y comparabilidad"
 2011,FALSE,"","","Solo contexto general; no mide opinión LGBTIQ+"
 2013,FALSE,"","","Solo contexto general; no mide opinión LGBTIQ+"

@@ -1,6 +1,6 @@
 # Dossier analítico exhaustivo de Latinobarómetro Bolivia, 1996–2024
 
-**Estado:** análisis reproducible de 23 cortes transversales repetidos. No se editó el artículo ni ningún archivo LaTeX. Las bases originales se preservaron.
+**Estado:** análisis reproducible de 23 cortes transversales repetidos, actualizado con 2009. Las bases originales se preservaron. El cierre documental y los diagnósticos adicionales están en `cierre_metodologico_2026_10_08`.
 
 ## Alcance y regla de evidencia
 
@@ -17,16 +17,16 @@ Las salidas `auditoria_oleadas.csv`, `inventario_variables_todas_oleadas.csv` y 
 Aparecen dos filas con `NUMENTRE` repetido en 2002 y otras dos en 2006; no son filas idénticas. Se conservan sin deduplicación, ya que corregirlas requiere el archivo de origen o respuesta del custodio. En 1996 no se identificó `NUMENTRE` ni `NUMINVES` inequívoco. La auditoría de tamaños detectó una discrepancia mayor en 2000, cuyo CSV tiene 1.080 filas y código de país 68 en todas, frente a 1.000 casos en la ficha; en 2001 el CSV tiene 1.075 frente a 1.080 en la ficha. Se exponen en `auditoria_n_microdato_vs_documentacion.csv` y `registro_discrepancias.csv`, sin ajustar los conteos del archivo.
 En 2000 no hay columna de ponderación en el CSV. Los pesos candidatos son constantes 1 en la mayoría de las oleadas y variables en 1998 y 2002–2005. La ficha 2016 indica que el ponderador no aplica y su WT constante vale 1.
 
-La matriz `matriz_documentacion_local.csv` lista cuestionarios y libros de códigos encontrados en el proyecto. Hay cuestionario local para 22 de 23 oleadas y codebook local para 7. Para 2015 se usó el codebook oficial en línea, que deberá archivarse antes del cierre editorial; 2009 no tiene cuestionario ni codebook local identificado. Las brechas documentales no se rellenaron por analogía.
+La matriz `matriz_documentacion_local.csv` lista cuestionarios y libros de códigos encontrados en el proyecto. Hay cuestionario local para 23 de 23 oleadas y codebook local para 9. En 2009 se recuperó el cuestionario inglés y el libro de códigos español; falta el cuestionario español para comprobar identidad literal de redacción. El libro de códigos 2015 está archivado en el expediente de cierre. Disponibilidad no equivale a cotejo completo.
 
 ## Cobertura de mediciones directas
 
-Hay nueve oleadas con una o más preguntas directas: 1998, 2002, 2004, 2006, 2008, 2010, 2015, 2023 y 2024. Las otras catorce no contienen una medición directa localizada en los cuestionarios disponibles. La matriz de cobertura separa las cinco familias de medición.
+El corpus principal contiene catorce ítems en diez oleadas: 1998, 2002, 2004, 2006, 2008, 2009, 2010, 2015, 2023 y 2024. Las otras trece no aportan una medición directa incluida. El expediente de cierre registra un hallazgo vecinal adicional de 2009, fuera de la serie principal por su cotejo literal incompleto.
 
 | Familia | Oleadas | Interpretación permitida |
 |---|---|---|
 | Distancia social | 1998, 2024 | Mención de homosexuales entre grupos no deseados como vecinos; las baterías no son idénticas |
-| Justificación moral | 2002, 2004, 2008 | Escala ordinal 1–10, donde 1 nunca se justifica y 10 siempre se justifica |
+| Justificación moral | 2002, 2004, 2008, 2009 | Escala ordinal 1–10; contexto inglés de 2009 revisado, texto español pendiente |
 | Saliencia de discriminación | 2006, 2008 | Selección única de una categoría; no mide experiencia propia ni incidencia |
 | Matrimonio igualitario | 2010, 2015, 2023 | Escala de acuerdo de cuatro categorías; cortes separados |
 | Cuatro ámbitos de derechos | 2023 | Adopción, matrimonio, reconocimiento documental y parentalidad, mismas personas |
@@ -82,7 +82,7 @@ La tabla `distribucion_completa_respuestas.csv` presenta todas las categorías c
 
 ## Asociaciones, modelos y pruebas
 
-`cruces_descriptivos_completos.csv` contiene tablas completas para sexo y edad en las oleadas con medición directa, más ideología, religión, práctica religiosa, ingreso subjetivo, clase, educación y territorio para 2023/2024 cuando esos campos están disponibles. `auditoria_covariables_cruces.csv` conserva el nombre y la regla de cada predictor. `pruebas_cruces_sensibilidad_srs.csv` registra estadístico, p, mínimo esperado y prueba utilizada. Los p-values se ajustan por Holm dentro de cada familia año-constructo. Para celdas esperadas pequeñas se marca la limitación o se usa Fisher en tablas 2×2.
+`cruces_descriptivos_completos.csv` contiene tablas completas para sexo y edad en las oleadas con medición directa, más ideología, religión, práctica religiosa, ingreso subjetivo, clase, educación y territorio para 2023/2024 cuando esos campos están disponibles. `auditoria_covariables_cruces.csv` conserva el nombre y la regla de cada predictor. `pruebas_cruces_sensibilidad_srs.csv` registra estadístico, p, mínimo esperado y prueba utilizada. Los p-values se ajustan por Holm dentro de cada familia año-constructo. Para tablas mayores escasas se utiliza Monte Carlo condicional con 200.000 replicaciones, y Fisher para 2×2 escasas.
 
 El modelo logístico 2024 estima asociaciones entre mención de distancia social y sexo, edad, educación, práctica religiosa, ideología, ingreso/clase y conteo de otros grupos excluidos. El conteo se construye excluyendo el grupo objetivo y la categoría de sustancias/alcohol, para evitar parte-todo y la categoría de altísima prevalencia. Es un modelo no ponderado de casos completos, con intervalo Wald/modelo bajo supuestos SRS y no causal. Se compararon especificaciones lineales con splines naturales para edad e ideología; las p ajustadas de no linealidad son edad_decadas p Holm=0.676; ideologia p Holm=0.544. Coeficientes y diagnósticos están en `modelo_2024_coeficientes.csv`, `modelo_2024_pruebas_conjuntas.csv`, `modelo_2024_sensibilidad_no_linealidad.csv` y `modelo_2024_resumen.csv`.
 
@@ -92,7 +92,7 @@ Además del cruce dicotómico, se estimaron modelos ordinales logísticos para c
 
 ### Resultados interpretables de los cruces
 
-En 2023, el acuerdo con matrimonio es 36.0% entre mujeres y 23.8% entre hombres; para la afirmación sobre parentalidad es 45.5% y 33.9%. Las pruebas SRS ajustadas por Holm identifican diferencias por sexo registrado en matrimonio (p ajustada <0,001) y parentalidad (p ajustada <0,01), no en todos los derechos. Por edad, las diferencias también se concentran en adopción (43.5% en 15–29 frente a 17.2% en 45–59), matrimonio (39.8% en 15–29 frente a 14.1% en 60+) y parentalidad (48.3% en 15–29 frente a 31.1% en 60+). Son asociaciones entre grupos de una muestra de cuotas; no efectos causales ni estimaciones design-completas.
+En 2023, el acuerdo con matrimonio es 36.0% entre mujeres y 23.8% entre hombres; para la afirmación sobre parentalidad es 45.5% y 33.9%. Las pruebas SRS ajustadas por Holm identifican diferencias por sexo registrado en matrimonio (p ajustada <0,001) y parentalidad (p ajustada <0,01), no en todos los derechos. Por edad, las diferencias también se concentran en adopción (43.5% en 15–29 frente a 17.2% en 45–59), matrimonio (39.8% en 15–29 frente a 14.1% en 60+) y parentalidad (48.3% en 15–29 frente a 31.1% en 60+). Son asociaciones entre respuestas observadas; no efectos causales ni estimaciones de diseño completo.
 
 En 2024, la mención de homosexuales como vecinos no deseados alcanza 34.7% entre hombres y 21.1% entre mujeres. El modelo ajustado estima para mujeres OR=0.50 (IC95 modelo 0.36–0.69), con p de Wald SRS=2.33e-05; la prueba conjunta del predictor da p Holm=1.39e-04. La relación persiste al ajustar covariables observadas. El resultado describe sexo registrado, no identidad de género.
 
@@ -110,7 +110,7 @@ La sensibilidad `sensibilidad_diseno_parcial_2023_2024.csv` usa `REG` como estra
 
 ## Discrepancias verificadas y límites de afirmación
 
-1. El microdato 2023 usa -5 en las cuatro preguntas de derechos donde cuestionario y codebook indican 0 para NS/NR. Se excluye -5 del denominador sustantivo y se preserva el código en los resultados crudos.
+1. El microdato 2023 usa -5 en las cuatro preguntas de derechos donde cuestionario y codebook indican 0 para NS/NR. El SPSS oficial etiqueta -5 como No sabe / No contesta; sus diez campos cotejados coinciden con los 1.200 registros del CSV. Se excluye -5 de respuestas 1–4 y se preserva su código crudo.
 2. En 2023, la edad observada en la muestra boliviana va de 18 a 84 años, mientras la etiqueta agrupada REEDAD del codebook empieza en 16–25. No se atribuye la diferencia a errores de entrevista; se documenta para cotejar con la ficha país.
 3. Los ponderadores candidatos varían solo en algunas bases. En 2000 no hay campo de peso; en 2016 WT=1 y la documentación indica que no aplica. No se asume que un campo llamado WT garantice la reconstrucción del diseño.
 4. Las fichas de 2024 describen muestreo de cuatro etapas con cuotas en la última. Las cuotas restringen el alcance de la inferencia probabilística convencional.
@@ -121,7 +121,7 @@ La sensibilidad `sensibilidad_diseno_parcial_2023_2024.csv` usa `REG` como estra
 
 La auditoría de integridad cubre las 23 bases disponibles y verifica filas y columnas contra el inventario; las familias de preguntas directas, sus códigos de respuesta y denominadores están trazados en el diccionario y archivos de cobertura. Se ejecutaron distribuciones, pruebas pareadas, cruces exhaustivos para los predictores preseleccionados, un barrido exploratorio con ajuste Holm, modelos ordinales/multinomiales para derechos 2023 y una logística para distancia social 2024. El código regenera tablas y figuras desde los CSV originales.
 
-La investigación todavía no alcanza un cierre inferencial plenamente defendible. Hay 2000 y 2001 con tamaños de microdato distintos de sus fichas; no se deben tratar como poblaciones muestrales resueltas. Para ninguna oleada se reconstruyó con certeza todo el diseño oficial a partir de los archivos disponibles. El codebook 2015 aún debe archivarse localmente, 2009 carece de documentación local identificada y la medición común de derechos 2023 no cuenta con una CFA ordinal. En consecuencia, los modelos y pruebas se reportan como sensibilidades SRS, no como estimaciones de diseño oficial. Estas tareas pendientes se detallan en `registro_discrepancias.csv`, `matriz_documentacion_local.csv` y `auditoria_diseno_y_fuentes.csv`.
+El cierre verifica descripción y cobertura muestral en 22 de 23 ediciones; 2023 conserva un cotejo parcial de universo y modalidad, con sección muestral vacía en el catálogo consultado. Se resolvió la etiqueta -5, se homologaron sexo/edad de diez muestras y se ejecutaron diagnósticos de celdas escasas y selección por casos completos. Persisten discrepancias de N en 2000/2001, identidad literal española de 2009 y falta de correspondencia integral entre unidades de selección y microdato. Estas condiciones limitan inferencia poblacional, sin invalidar la descripción de respuestas observadas. No se presenta una CFA ordinal como tarea resuelta ni se necesita una para describir ítems por separado.
 
 ## Argumentos sostenibles para el artículo
 

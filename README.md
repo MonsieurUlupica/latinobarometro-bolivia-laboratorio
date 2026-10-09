@@ -4,7 +4,7 @@ Autor: Jean Paolo Porcel Inquillo. Estado: versión de trabajo del 8 de octubre 
 
 Repositorio público: https://github.com/MonsieurUlupica/latinobarometro-bolivia-laboratorio
 
-El laboratorio documenta el análisis secundario de 23 bases bolivianas de 1996–2024. El artículo utiliza catorce mediciones en diez oleadas. El código exploratorio, el análisis exhaustivo y la verificación independiente son etapas distintas. La verificación incorpora 2009 y corrige la interpretación de identificadores y umbrales. Las salidas anteriores se conservan para trazabilidad, no deben tratarse como resultados finales intercambiables.
+El laboratorio documenta el análisis secundario de 23 bases bolivianas de 1996–2024. El artículo utiliza catorce mediciones en diez oleadas. El código exploratorio, el análisis exhaustivo, la verificación independiente y el cierre metodológico son etapas distintas. El código principal ya incorpora 2009 y exporta pendientes y umbrales por separado. El estado vigente se documenta en [el informe de cierre](Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md); los informes previos conservan observaciones históricas, no una lista actual de pendientes.
 
 ## Contenido público
 
@@ -25,15 +25,16 @@ Consultar cuestionarios, libros de códigos y fichas oficiales para respaldar la
 
 ## Ejecución
 
-Desde la raíz del repositorio, con R y los paquetes `MASS`, `nnet` y `survey`:
+Desde la raíz del repositorio, con R y los paquetes `MASS`, `nnet`, `survey` y `haven` para el cotejo SPSS:
 
 ```sh
 Rscript Latinobarometro_historico_Bolivia/analisis_exploratorio/analisis_exploratorio.R
 Rscript Latinobarometro_historico_Bolivia/analisis_exhaustivo/analisis_exhaustivo.R
 Rscript Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/verificacion_independiente.R
+Rscript Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/cerrar_pendientes.R
 ```
 
-El script exploratorio es una etapa histórica, no un requisito del análisis exhaustivo. La verificación independiente lee las salidas del análisis exhaustivo y debe ejecutarse después. Estas ejecuciones regeneran salidas en el equipo del lector. Trabajar en una copia si se desean preservar las salidas publicadas. No se ha realizado aún una prueba de reconstrucción desde un clon limpio con todas las entradas descargadas nuevamente.
+El script exploratorio es una etapa histórica, no un requisito del análisis exhaustivo. La verificación independiente lee las salidas del análisis exhaustivo y debe ejecutarse después. El cierre regenera también el código principal y requiere adicionalmente el SPSS agregado oficial 2023, no redistribuido; su enlace y ruta local están en el README de esa etapa. Trabajar en una copia para preservar salidas anteriores. `verificar_reproduccion.R` regeneró 43 CSV idénticos en un directorio nuevo, usando las mismas entradas locales; no equivale a un clon con entradas redescargadas.
 
 Los porcentajes describen respuestas observadas. Las pruebas e intervalos SRS son sensibilidades bajo supuestos simplificados; `REG` y `COMDIST` no reconstruyen el diseño oficial. No se estima población LGBTIQ+, cambio individual ni efectos causales.
 
@@ -43,13 +44,17 @@ Porcel Inquillo, J. P. (2026). *Laboratorio de opinión pública sobre diversida
 
 Para fijar una versión, añadir la URL del commit publicado. No se ha asignado DOI. El repositorio no reemplaza la cita de los datos ni la documentación de Corporación Latinobarómetro.
 
-## Pendientes que no se consideran resueltos
+## Estado del cotejo y del análisis
 
-1. Cotejo muestral país por país de 2016, 2017, 2018, 2020 y 2023; prioridad sustantiva en 2023.
-2. Reconstrucción de estratos, conglomerados, cuotas y probabilidades originales; documentación de selección y tasas de respuesta.
-3. Caracterización sociodemográfica homologada de las diez muestras sustantivas. El perfil mecánico de 23 oleadas no sustituye ese cotejo.
-4. Significado documental del código −5 de 2023 y contexto completo del ítem moral de 2009.
-5. Diagnósticos adicionales de celdas escasas y selección por casos completos.
+- Descripción y cobertura muestral cotejadas para 22 de 23 ediciones. En 2023 se verificaron universo y modalidad; falta ficha boliviana detallada. «18 de 23» era cotejo documental, no cantidad de bases recuperadas.
+- Resuelto −5 de 2023 mediante etiquetas SPSS y coincidencia de 1.200 registros en diez campos frente al CSV.
+- Homologados sexo registrado y edad exacta de las diez muestras sustantivas. Otras covariables históricas requieren armonización específica.
+- Ejecutados Monte Carlo condicional en tablas mayores escasas y diagnósticos de selección por casos completos, con sensibilidad a no aplicable en práctica religiosa.
+- Contexto de 2009 revisado en cuestionario inglés y libro español; falta cuestionario español para identidad literal. Se documenta un ítem vecinal adicional como hallazgo complementario, no como serie homogénea.
+
+## Lo que continúa abierto
+
+Reconstrucción integral de unidades y probabilidades originales y tasas de respuesta; ficha boliviana detallada 2023; discrepancias de N de 2000/2001; cotejo literal español 2009; homologación de educación y demás covariables históricas. La solicitud técnica al productor está preparada, no enviada. Estos asuntos no se confunden con las tareas efectivamente ejecutadas.
 
 ## Derechos y alcance
 

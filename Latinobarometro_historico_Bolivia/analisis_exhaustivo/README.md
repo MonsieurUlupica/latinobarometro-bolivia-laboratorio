@@ -10,7 +10,7 @@ Desde la raíz del proyecto, ejecutar:
 Rscript Latinobarometro_historico_Bolivia/analisis_exhaustivo/analisis_exhaustivo.R
 ```
 
-El script usa R base. El paquete `survey` es opcional y permite generar intervalos de sensibilidad parcial para 2023 y 2024 con `REG` y `COMDIST`. Esa aproximación no reconstruye todas las etapas ni cuotas del diseño oficial. Si `survey` no está instalado, las demás tablas y figuras se generan igualmente y la tabla de sensibilidad queda vacía.
+El script usa R base; requiere `MASS` y `nnet` para los modelos ordinales y multinomiales. `survey` permite generar intervalos de sensibilidad parcial para 2023 y 2024 con `REG` y `COMDIST`; si falta, esa tabla queda vacía. La aproximación no reconstruye etapas ni cuotas oficiales. El estado actualizado del cotejo documental y la selección por casos completos está en `../cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md`. El código principal incorpora 2009 y separa 68 pendientes ordinales de 12 umbrales.
 
 ## Archivos principales
 
