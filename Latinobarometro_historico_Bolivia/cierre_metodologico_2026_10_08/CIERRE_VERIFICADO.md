@@ -63,9 +63,9 @@ Archivos: `factor_ordinal_2023_ajuste.csv`, `factor_ordinal_2023_parametros.csv`
 
 ## Reproducción y condiciones
 
-Se creó un clon del repositorio público y se redescargaron los 23 ZIP nacionales CSV. Sus CSV fueron idénticos byte por byte a las entradas originales. Con el código principal del clon se regeneraron 43 CSV agregados: 43 idénticos. La documentación PDF fue aportada desde el archivo local, condición explícita del ensayo. Los nuevos análisis tienen código ejecutado y sus salidas; la prueba independiente de 43 salidas corresponde al núcleo principal, no a una certificación independiente de cada nuevo diagnóstico.
+Se creó un clon del repositorio público y se redescargaron los 23 ZIP nacionales CSV. Sus CSV fueron idénticos byte por byte a las entradas originales. Con el código principal del clon se regeneraron 43 CSV agregados: 43 idénticos. La documentación PDF fue aportada desde el archivo local, condición explícita del ensayo. Después de actualizar el clon al commit `3db33bdf26508b8a47688961643625c926f7f4b7`, se ejecutaron los dos scripts suplementarios publicados: sus 17 CSV también fueron idénticos a las referencias locales. Para esos cotejos se aportaron además el CSVText oficial 2024 y los TXT documentales desde el expediente local. No es una validación externa de las decisiones científicas.
 
-Archivos: `verificacion_redescarga_23.csv`, `reproduccion_clon_redescarga.csv`. Se publican código y agregados, no datos, textos de terceros, documentación individual ni el manuscrito. La solicitud técnica al productor está preparada y **no enviada**.
+Archivos: `verificacion_redescarga_23.csv`, `reproduccion_clon_redescarga.csv`, `reproduccion_suplementaria_clon.csv`; código del último cotejo en `verificar_salidas_suplementarias.py`. Se publican código y agregados, no datos, textos de terceros, documentación individual ni el manuscrito. La solicitud técnica al productor está preparada y **no enviada**.
 
 ## Qué no puede resolverse mediante más cálculo sobre estos archivos
 

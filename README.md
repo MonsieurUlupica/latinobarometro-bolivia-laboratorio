@@ -53,6 +53,7 @@ Para fijar una versión, añadir la URL del commit publicado. No se ha asignado 
 - Homologados sexo y edad de diez muestras; completadas 50 correspondencias adicionales de educación, práctica, religión, ideología e ingreso, conservando diferencias documentales y códigos originales.
 - Ejecutados 70 cruces adicionales y 65 ajustes de sensibilidad, con todos los resultados y nulos. Modelo factorial ordinal de cuatro ítems ejecutado con diagnósticos discordantes, sin certificar escala general validada.
 - Cotejados 240 puntos y 1.200 cédulas de 2018/2020; COMDIST ausente en 2018 y coincidencia exacta de 240 códigos en 2020, sin equiparar puntos con todas las etapas del diseño.
+- Verificados 23 CSV redescargados y 43/43 salidas principales; los scripts suplementarios del clon publicado regeneraron también 17/17 CSV idénticos. Documentación y CSVText se aportaron localmente; no se afirma recuperación independiente de todos los documentos.
 - Ejecutados Monte Carlo condicional en tablas mayores escasas y diagnósticos de selección por casos completos, con sensibilidad a no aplicable en práctica religiosa.
 - Contexto de 2009 revisado en cuestionario inglés y libro español; falta cuestionario español para identidad literal. Se documenta un ítem vecinal adicional como hallazgo complementario, no como serie homogénea.
 
