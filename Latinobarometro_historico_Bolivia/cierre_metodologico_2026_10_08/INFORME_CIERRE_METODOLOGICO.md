@@ -1,5 +1,7 @@
 # Cierre de tareas analíticas y cotejo documental
 
+Estado vigente: [CIERRE_VERIFICADO.md](CIERRE_VERIFICADO.md). Se completaron posteriormente las 50 correspondencias de covariables, el cotejo operativo de puntos, 70 cruces adicionales, 65 sensibilidades, diagnóstico factorial ordinal y redescarga/reproducción desde un clon. Las tablas de alcance restante de este informe describen la etapa anterior, no pendientes actuales de cálculo.
+
 Versión del 8 de octubre de 2026. Esta actualización sustituye el listado de pendientes del primer paquete público; no elimina sus registros históricos. Las bases originales permanecen intactas. Los resultados principales describen respuestas observadas; los contrastes y modelos conservan su alcance de sensibilidad bajo independencia.
 
 ## Qué significaba «18 de 23»
@@ -92,7 +94,7 @@ En matrimonio 2023 las OR ordinales fueron 1,77, 1,82 y 1,84. En documento fuero
 
 ### No aplicable en práctica religiosa
 
-La especificación principal de 2023 excluye códigos fuera de 1–4. Una sensibilidad conserva −3, «No aplicable», como categoría distinta, sin adjudicarle creencia o religiosidad. Los tamaños aumentan a 986, 980, 972 y 892, respectivamente, agregando 104–106 casos respecto de los modelos principales.
+La especificación principal de 2023 excluye códigos fuera de 1–4. Una sensibilidad conserva −3, «No aplicable», como categoría distinta, sin adjudicarle creencia o religiosidad. Los tamaños aumentan a 986, 980, 972 y 892, respectivamente, agregando 94–106 casos respecto de los modelos principales.
 
 La OR mujer/hombre matrimonial pasa de 1,84 a 1,92; la documental, de 1,26 a 1,36. El intervalo Wald individual de documento deja de incluir uno en esa sensibilidad. No se promociona ese resultado a hallazgo robusto: dichos intervalos individuales no están ajustados simultáneamente y cambia la especificación. La interpretación de un resultado nulo debe mencionar esa dependencia.
 

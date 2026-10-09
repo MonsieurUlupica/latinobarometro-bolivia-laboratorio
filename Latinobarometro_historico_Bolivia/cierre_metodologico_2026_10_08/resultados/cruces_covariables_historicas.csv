@@ -1,0 +1,267 @@
+"anio","variable","predictor","categoria","n_valido","eventos","pct_evento","mediana_codigo"
+"1998","NP63A","educacion","Básica o inferior",156,97,62.1794871794872,1
+"1998","NP63A","educacion","Secundaria/técnica",223,114,51.1210762331839,1
+"1998","NP63A","educacion","Superior",329,176,53.4954407294833,1
+"1998","NP63A","practica","Nivel 1",53,31,58.4905660377358,1
+"1998","NP63A","practica","Nivel 2",240,129,53.75,1
+"1998","NP63A","practica","Nivel 3",312,159,50.9615384615385,1
+"1998","NP63A","practica","Nivel 4",22,14,63.6363636363636,1
+"1998","NP63A","practica","No aplicable",40,17,42.5,0
+"1998","NP63A","religion","Católica",643,355,55.2099533437014,1
+"1998","NP63A","religion","Ninguna",25,10,40,0
+"1998","NP63A","religion","Otras categorías sustantivas",115,54,46.9565217391304,0
+"1998","NP63A","ideologia","0-3",98,55,56.1224489795918,1
+"1998","NP63A","ideologia","4-6",288,153,53.125,1
+"1998","NP63A","ideologia","7-10",125,74,59.2,1
+"1998","NP63A","ideologia","Ninguna",140,66,47.1428571428571,0
+"1998","NP63A","ingreso","Nivel 1",104,55,52.8846153846154,1
+"1998","NP63A","ingreso","Nivel 2",332,163,49.0963855421687,0
+"1998","NP63A","ingreso","Nivel 3",259,150,57.9150579150579,1
+"1998","NP63A","ingreso","Nivel 4",71,42,59.1549295774648,1
+"2002","P52WVSC","educacion","Básica o inferior",308,,,1
+"2002","P52WVSC","educacion","Secundaria/técnica",589,,,1
+"2002","P52WVSC","educacion","Superior",212,,,1
+"2002","P52WVSC","practica","Nivel 1",157,,,1
+"2002","P52WVSC","practica","Nivel 2",424,,,1
+"2002","P52WVSC","practica","Nivel 3",448,,,1
+"2002","P52WVSC","practica","Nivel 4",42,,,1
+"2002","P52WVSC","practica","No aplicable",37,,,1
+"2002","P52WVSC","religion","Católica",897,,,1
+"2002","P52WVSC","religion","Ninguna",17,,,1
+"2002","P52WVSC","religion","Otras categorías sustantivas",178,,,1
+"2002","P52WVSC","ideologia","0-3",230,,,1
+"2002","P52WVSC","ideologia","4-6",446,,,1
+"2002","P52WVSC","ideologia","7-10",242,,,1
+"2002","P52WVSC","ideologia","Ninguna",133,,,1
+"2002","P52WVSC","ingreso","Nivel 1",65,,,1
+"2002","P52WVSC","ingreso","Nivel 2",398,,,1
+"2002","P52WVSC","ingreso","Nivel 3",530,,,1
+"2002","P52WVSC","ingreso","Nivel 4",87,,,1
+"2004","P38STA","educacion","Básica o inferior",366,,,2
+"2004","P38STA","educacion","Secundaria/técnica",314,,,3
+"2004","P38STA","educacion","Superior",319,,,4
+"2004","P38STA","practica","Nivel 1",145,,,2
+"2004","P38STA","practica","Nivel 2",329,,,3
+"2004","P38STA","practica","Nivel 3",427,,,3
+"2004","P38STA","practica","Nivel 4",47,,,3
+"2004","P38STA","practica","No aplicable",51,,,4
+"2004","P38STA","religion","Católica",773,,,3
+"2004","P38STA","religion","Ninguna",12,,,5.5
+"2004","P38STA","religion","Otras categorías sustantivas",192,,,1
+"2004","P38STA","ideologia","0-3",170,,,3
+"2004","P38STA","ideologia","4-6",492,,,3
+"2004","P38STA","ideologia","7-10",99,,,2
+"2004","P38STA","ideologia","Ninguna",170,,,1
+"2004","P38STA","ingreso","Nivel 1",61,,,3
+"2004","P38STA","ingreso","Nivel 2",291,,,2
+"2004","P38STA","ingreso","Nivel 3",405,,,3
+"2004","P38STA","ingreso","Nivel 4",203,,,3
+"2006","P46STM","educacion","Básica o inferior",628,5,0.796178343949045,9
+"2006","P46STM","educacion","Secundaria/técnica",323,5,1.54798761609907,9
+"2006","P46STM","educacion","Superior",210,4,1.9047619047619,9
+"2006","P46STM","practica","Nivel 1",130,4,3.07692307692308,8
+"2006","P46STM","practica","Nivel 2",425,2,0.470588235294118,9
+"2006","P46STM","practica","Nivel 3",497,6,1.20724346076459,9
+"2006","P46STM","practica","Nivel 4",65,0,0,9
+"2006","P46STM","practica","No aplicable",39,1,2.56410256410256,10
+"2006","P46STM","religion","Católica",930,11,1.18279569892473,9
+"2006","P46STM","religion","Ninguna",11,0,0,5
+"2006","P46STM","religion","Otras categorías sustantivas",201,2,0.995024875621891,9
+"2006","P46STM","ideologia","0-3",179,1,0.558659217877095,9
+"2006","P46STM","ideologia","4-6",547,7,1.27970749542962,9
+"2006","P46STM","ideologia","7-10",122,2,1.63934426229508,9
+"2006","P46STM","ideologia","Ninguna",250,2,0.8,9
+"2006","P46STM","ingreso","Nivel 1",126,1,0.793650793650794,9
+"2006","P46STM","ingreso","Nivel 2",436,7,1.60550458715596,9
+"2006","P46STM","ingreso","Nivel 3",445,4,0.898876404494382,9
+"2006","P46STM","ingreso","Nivel 4",98,0,0,9
+"2008","P64WVSST","educacion","Básica o inferior",530,,,4
+"2008","P64WVSST","educacion","Secundaria/técnica",295,,,5
+"2008","P64WVSST","educacion","Superior",227,,,5
+"2008","P68ST","educacion","Básica o inferior",564,3,0.531914893617021,9
+"2008","P68ST","educacion","Secundaria/técnica",280,5,1.78571428571429,9
+"2008","P68ST","educacion","Superior",212,3,1.41509433962264,2.5
+"2008","P64WVSST","practica","Nivel 1",105,,,4
+"2008","P64WVSST","practica","Nivel 2",347,,,5
+"2008","P64WVSST","practica","Nivel 3",455,,,4
+"2008","P64WVSST","practica","Nivel 4",53,,,3
+"2008","P64WVSST","practica","No aplicable",62,,,5
+"2008","P68ST","practica","Nivel 1",107,1,0.934579439252336,9
+"2008","P68ST","practica","Nivel 2",340,4,1.17647058823529,9
+"2008","P68ST","practica","Nivel 3",462,4,0.865800865800866,2
+"2008","P68ST","practica","Nivel 4",57,0,0,9
+"2008","P68ST","practica","No aplicable",59,1,1.69491525423729,9
+"2008","P64WVSST","religion","Católica",780,,,5
+"2008","P64WVSST","religion","Ninguna",35,,,5
+"2008","P64WVSST","religion","Otras categorías sustantivas",223,,,4
+"2008","P68ST","religion","Católica",784,8,1.02040816326531,9
+"2008","P68ST","religion","Ninguna",36,1,2.77777777777778,5.5
+"2008","P68ST","religion","Otras categorías sustantivas",225,2,0.888888888888889,9
+"2008","P64WVSST","ideologia","0-3",208,,,4
+"2008","P64WVSST","ideologia","4-6",542,,,5
+"2008","P64WVSST","ideologia","7-10",132,,,5
+"2008","P64WVSST","ideologia","Ninguna",90,,,3
+"2008","P68ST","ideologia","0-3",205,2,0.975609756097561,9
+"2008","P68ST","ideologia","4-6",525,5,0.952380952380952,9
+"2008","P68ST","ideologia","7-10",118,1,0.847457627118644,9
+"2008","P68ST","ideologia","Ninguna",96,2,2.08333333333333,9
+"2008","P64WVSST","ingreso","Nivel 1",98,,,5
+"2008","P64WVSST","ingreso","Nivel 2",459,,,4
+"2008","P64WVSST","ingreso","Nivel 3",377,,,5
+"2008","P64WVSST","ingreso","Nivel 4",97,,,4
+"2008","P68ST","ingreso","Nivel 1",92,1,1.08695652173913,7
+"2008","P68ST","ingreso","Nivel 2",460,5,1.08695652173913,2
+"2008","P68ST","ingreso","Nivel 3",388,3,0.77319587628866,9
+"2008","P68ST","ingreso","Nivel 4",93,2,2.1505376344086,9
+"2009","P63WVSST","educacion","Básica o inferior",530,,,4
+"2009","P63WVSST","educacion","Secundaria/técnica",293,,,5
+"2009","P63WVSST","educacion","Superior",228,,,4
+"2009","P63WVSST","practica","Nivel 1",123,,,4
+"2009","P63WVSST","practica","Nivel 2",391,,,4
+"2009","P63WVSST","practica","Nivel 3",385,,,4
+"2009","P63WVSST","practica","Nivel 4",101,,,5
+"2009","P63WVSST","practica","No aplicable",47,,,4
+"2009","P63WVSST","religion","Católica",853,,,4
+"2009","P63WVSST","religion","Ninguna",37,,,4
+"2009","P63WVSST","religion","Otras categorías sustantivas",158,,,4
+"2009","P63WVSST","ideologia","0-3",180,,,4
+"2009","P63WVSST","ideologia","4-6",545,,,5
+"2009","P63WVSST","ideologia","7-10",116,,,5
+"2009","P63WVSST","ideologia","Ninguna",125,,,3
+"2009","P63WVSST","ingreso","Nivel 1",98,,,4
+"2009","P63WVSST","ingreso","Nivel 2",449,,,5
+"2009","P63WVSST","ingreso","Nivel 3",404,,,4
+"2009","P63WVSST","ingreso","Nivel 4",82,,,4
+"2010","P14N.G","educacion","Básica o inferior",528,79,14.9621212121212,3
+"2010","P14N.G","educacion","Secundaria/técnica",289,68,23.5294117647059,3
+"2010","P14N.G","educacion","Superior",203,52,25.615763546798,3
+"2010","P14N.G","practica","Nivel 1",116,15,12.9310344827586,4
+"2010","P14N.G","practica","Nivel 2",341,70,20.5278592375367,3
+"2010","P14N.G","practica","Nivel 3",430,87,20.2325581395349,3
+"2010","P14N.G","practica","Nivel 4",74,12,16.2162162162162,3
+"2010","P14N.G","practica","No aplicable",55,15,27.2727272727273,3
+"2010","P14N.G","religion","Católica",767,154,20.0782268578879,3
+"2010","P14N.G","religion","Ninguna",46,14,30.4347826086957,3
+"2010","P14N.G","religion","Otras categorías sustantivas",204,31,15.1960784313725,3
+"2010","P14N.G","ideologia","0-3",145,31,21.3793103448276,3
+"2010","P14N.G","ideologia","4-6",510,104,20.3921568627451,3
+"2010","P14N.G","ideologia","7-10",108,24,22.2222222222222,3
+"2010","P14N.G","ideologia","Ninguna",142,22,15.4929577464789,4
+"2010","P14N.G","ingreso","Nivel 1",78,23,29.4871794871795,3
+"2010","P14N.G","ingreso","Nivel 2",457,101,22.1006564551422,3
+"2010","P14N.G","ingreso","Nivel 3",401,62,15.4613466334165,4
+"2010","P14N.G","ingreso","Nivel 4",67,11,16.4179104477612,3
+"2015","P69ST.C","educacion","Básica o inferior",357,50,14.0056022408964,4
+"2015","P69ST.C","educacion","Secundaria/técnica",462,65,14.0692640692641,4
+"2015","P69ST.C","educacion","Superior",259,50,19.3050193050193,3
+"2015","P69ST.C","practica","Nivel 1",82,12,14.6341463414634,3.5
+"2015","P69ST.C","practica","Nivel 2",351,43,12.2507122507123,4
+"2015","P69ST.C","practica","Nivel 3",498,79,15.863453815261,3
+"2015","P69ST.C","practica","Nivel 4",90,19,21.1111111111111,4
+"2015","P69ST.C","practica","No aplicable",48,10,20.8333333333333,3
+"2015","P69ST.C","religion","Católica",811,123,15.1664611590629,4
+"2015","P69ST.C","religion","Ninguna",42,8,19.047619047619,3
+"2015","P69ST.C","religion","Otras categorías sustantivas",219,32,14.6118721461187,4
+"2015","P69ST.C","ideologia","0-3",192,28,14.5833333333333,3.5
+"2015","P69ST.C","ideologia","4-6",449,73,16.2583518930958,4
+"2015","P69ST.C","ideologia","7-10",135,21,15.5555555555556,4
+"2015","P69ST.C","ideologia","Ninguna",140,19,13.5714285714286,4
+"2015","P69ST.C","ingreso","Nivel 1",164,25,15.2439024390244,4
+"2015","P69ST.C","ingreso","Nivel 2",577,88,15.2512998266898,4
+"2015","P69ST.C","ingreso","Nivel 3",270,42,15.5555555555556,4
+"2015","P69ST.C","ingreso","Nivel 4",42,3,7.14285714285714,4
+"2023","P37CSN.A","educacion","Básica o inferior",398,91,22.8643216080402,3
+"2023","P37CSN.A","educacion","Secundaria/técnica",494,177,35.82995951417,3
+"2023","P37CSN.A","educacion","Superior",276,95,34.4202898550725,3
+"2023","P37CSN.B","educacion","Básica o inferior",401,84,20.9476309226933,3
+"2023","P37CSN.B","educacion","Secundaria/técnica",490,165,33.6734693877551,3
+"2023","P37CSN.B","educacion","Superior",276,99,35.8695652173913,3
+"2023","P37CSN.F","educacion","Básica o inferior",383,157,40.9921671018277,3
+"2023","P37CSN.F","educacion","Secundaria/técnica",484,212,43.801652892562,3
+"2023","P37CSN.F","educacion","Superior",276,124,44.9275362318841,3
+"2023","P37WVSCS.H","educacion","Básica o inferior",352,123,34.9431818181818,3
+"2023","P37WVSCS.H","educacion","Secundaria/técnica",445,190,42.6966292134831,3
+"2023","P37WVSCS.H","educacion","Superior",253,102,40.3162055335968,3
+"2023","P37CSN.A","practica","Nivel 1",82,17,20.7317073170732,3
+"2023","P37CSN.A","practica","Nivel 2",316,91,28.7974683544304,3
+"2023","P37CSN.A","practica","Nivel 3",529,175,33.0812854442344,3
+"2023","P37CSN.A","practica","Nivel 4",112,37,33.0357142857143,3
+"2023","P37CSN.A","practica","No aplicable",122,41,33.6065573770492,3
+"2023","P37CSN.B","practica","Nivel 1",82,17,20.7317073170732,3
+"2023","P37CSN.B","practica","Nivel 2",319,81,25.3918495297806,3
+"2023","P37CSN.B","practica","Nivel 3",524,171,32.6335877862595,3
+"2023","P37CSN.B","practica","Nivel 4",112,33,29.4642857142857,3
+"2023","P37CSN.B","practica","No aplicable",124,45,36.2903225806452,3
+"2023","P37CSN.F","practica","Nivel 1",79,33,41.7721518987342,3
+"2023","P37CSN.F","practica","Nivel 2",310,113,36.4516129032258,3
+"2023","P37CSN.F","practica","Nivel 3",517,238,46.0348162475822,3
+"2023","P37CSN.F","practica","Nivel 4",110,50,45.4545454545455,3
+"2023","P37CSN.F","practica","No aplicable",121,58,47.9338842975207,3
+"2023","P37WVSCS.H","practica","Nivel 1",74,24,32.4324324324324,3
+"2023","P37WVSCS.H","practica","Nivel 2",289,106,36.6782006920415,3
+"2023","P37WVSCS.H","practica","Nivel 3",470,196,41.7021276595745,3
+"2023","P37WVSCS.H","practica","Nivel 4",103,37,35.9223300970874,3
+"2023","P37WVSCS.H","practica","No aplicable",107,48,44.8598130841121,3
+"2023","P37CSN.A","religion","Católica",763,250,32.7653997378768,3
+"2023","P37CSN.A","religion","Ninguna",73,25,34.2465753424658,3
+"2023","P37CSN.A","religion","Otras categorías sustantivas",320,86,26.875,3
+"2023","P37CSN.B","religion","Católica",759,249,32.8063241106719,3
+"2023","P37CSN.B","religion","Ninguna",73,25,34.2465753424658,3
+"2023","P37CSN.B","religion","Otras categorías sustantivas",322,72,22.360248447205,3
+"2023","P37CSN.F","religion","Católica",748,332,44.3850267379679,3
+"2023","P37CSN.F","religion","Ninguna",70,33,47.1428571428571,3
+"2023","P37CSN.F","religion","Otras categorías sustantivas",312,122,39.1025641025641,3
+"2023","P37WVSCS.H","religion","Católica",684,297,43.4210526315789,3
+"2023","P37WVSCS.H","religion","Ninguna",63,26,41.2698412698413,3
+"2023","P37WVSCS.H","religion","Otras categorías sustantivas",294,89,30.2721088435374,3
+"2023","P37CSN.A","ideologia","0-3",250,79,31.6,3
+"2023","P37CSN.A","ideologia","4-6",522,175,33.5249042145594,3
+"2023","P37CSN.A","ideologia","7-10",235,63,26.8085106382979,3
+"2023","P37CSN.A","ideologia","Ninguna",96,25,26.0416666666667,3
+"2023","P37CSN.B","ideologia","0-3",248,68,27.4193548387097,3
+"2023","P37CSN.B","ideologia","4-6",518,174,33.5907335907336,3
+"2023","P37CSN.B","ideologia","7-10",236,60,25.4237288135593,3
+"2023","P37CSN.B","ideologia","Ninguna",98,27,27.5510204081633,3
+"2023","P37CSN.F","ideologia","0-3",240,97,40.4166666666667,3
+"2023","P37CSN.F","ideologia","4-6",519,241,46.4354527938343,3
+"2023","P37CSN.F","ideologia","7-10",234,91,38.8888888888889,3
+"2023","P37CSN.F","ideologia","Ninguna",93,35,37.6344086021505,3
+"2023","P37WVSCS.H","ideologia","0-3",224,91,40.625,3
+"2023","P37WVSCS.H","ideologia","4-6",472,202,42.7966101694915,3
+"2023","P37WVSCS.H","ideologia","7-10",216,69,31.9444444444444,3
+"2023","P37WVSCS.H","ideologia","Ninguna",84,27,32.1428571428571,3
+"2023","P37CSN.A","ingreso","Nivel 1",196,83,42.3469387755102,3
+"2023","P37CSN.A","ingreso","Nivel 2",480,148,30.8333333333333,3
+"2023","P37CSN.A","ingreso","Nivel 3",385,103,26.7532467532468,3
+"2023","P37CSN.A","ingreso","Nivel 4",87,24,27.5862068965517,3
+"2023","P37CSN.B","ingreso","Nivel 1",196,63,32.1428571428571,3
+"2023","P37CSN.B","ingreso","Nivel 2",477,160,33.5429769392034,3
+"2023","P37CSN.B","ingreso","Nivel 3",390,97,24.8717948717949,3
+"2023","P37CSN.B","ingreso","Nivel 4",82,21,25.609756097561,3
+"2023","P37CSN.F","ingreso","Nivel 1",195,84,43.0769230769231,3
+"2023","P37CSN.F","ingreso","Nivel 2",472,211,44.7033898305085,3
+"2023","P37CSN.F","ingreso","Nivel 3",373,156,41.8230563002681,3
+"2023","P37CSN.F","ingreso","Nivel 4",83,33,39.7590361445783,3
+"2023","P37WVSCS.H","ingreso","Nivel 1",178,80,44.9438202247191,3
+"2023","P37WVSCS.H","ingreso","Nivel 2",435,171,39.3103448275862,3
+"2023","P37WVSCS.H","ingreso","Nivel 3",346,127,36.7052023121387,3
+"2023","P37WVSCS.H","ingreso","Nivel 4",72,29,40.2777777777778,3
+"2024","P3NOIJ.3","educacion","Básica o inferior",332,97,29.2168674698795,0
+"2024","P3NOIJ.3","educacion","Secundaria/técnica",441,133,30.1587301587302,0
+"2024","P3NOIJ.3","educacion","Superior",253,57,22.5296442687747,0
+"2024","P3NOIJ.3","practica","Nivel 1",75,22,29.3333333333333,0
+"2024","P3NOIJ.3","practica","Nivel 2",332,99,29.8192771084337,0
+"2024","P3NOIJ.3","practica","Nivel 3",420,120,28.5714285714286,0
+"2024","P3NOIJ.3","practica","Nivel 4",66,13,19.6969696969697,0
+"2024","P3NOIJ.3","practica","No aplicable",125,32,25.6,0
+"2024","P3NOIJ.3","religion","Católica",653,161,24.6554364471669,0
+"2024","P3NOIJ.3","religion","Ninguna",91,20,21.978021978022,0
+"2024","P3NOIJ.3","religion","Otras categorías sustantivas",273,102,37.3626373626374,0
+"2024","P3NOIJ.3","ideologia","0-3",210,53,25.2380952380952,0
+"2024","P3NOIJ.3","ideologia","4-6",446,131,29.372197309417,0
+"2024","P3NOIJ.3","ideologia","7-10",234,66,28.2051282051282,0
+"2024","P3NOIJ.3","ideologia","Ninguna",90,25,27.7777777777778,0
+"2024","P3NOIJ.3","ingreso","Nivel 1",190,57,30,0
+"2024","P3NOIJ.3","ingreso","Nivel 2",394,115,29.1878172588832,0
+"2024","P3NOIJ.3","ingreso","Nivel 3",339,85,25.0737463126844,0
+"2024","P3NOIJ.3","ingreso","Nivel 4",90,25,27.7777777777778,0

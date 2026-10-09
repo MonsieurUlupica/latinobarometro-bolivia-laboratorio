@@ -1,0 +1,6 @@
+"anio","variable","n","convergencia","hessiana_min","condicion_hessiana","n_parametros","se_finito","tipo"
+2023,"P37CSN.A",881,0,1.76280936450073,4947.17824424235,20,TRUE,"Ordinal; escala original de parámetros; condición sensible a unidades"
+2023,"P37CSN.B",874,0,1.76440995391975,4857.66753977036,20,TRUE,"Ordinal; escala original de parámetros; condición sensible a unidades"
+2023,"P37CSN.F",868,0,1.71600219943907,5176.56930369068,20,TRUE,"Ordinal; escala original de parámetros; condición sensible a unidades"
+2023,"P37WVSCS.H",798,0,1.44685590506785,5586.1844220648,20,TRUE,"Ordinal; escala original de parámetros; condición sensible a unidades"
+2024,"P3NOIJ.3",859,0,,9267.24144699459,22,TRUE,"Logística; información observada"

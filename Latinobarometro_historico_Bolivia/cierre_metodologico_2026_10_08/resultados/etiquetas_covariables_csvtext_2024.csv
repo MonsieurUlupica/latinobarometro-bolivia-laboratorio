@@ -1,0 +1,49 @@
+"predictor","variable","codigo","etiqueta","n"
+"educacion","REEDUC.1","1","Analfabeto",90
+"educacion","REEDUC.1","3","Básica completa",137
+"educacion","REEDUC.1","2","Básica incompleta",193
+"educacion","REEDUC.1","5","Secundaria, media, técnica completa",377
+"educacion","REEDUC.1","4","Secundaria, media, técnica incompleta",123
+"educacion","REEDUC.1","7","Superior completa",147
+"educacion","REEDUC.1","6","Superior Incompleta",133
+"practica","S1A","1","Muy practicante",91
+"practica","S1A","-3","No aplicable",150
+"practica","S1A","-2","No contesta",4
+"practica","S1A","3","No muy practicante",480
+"practica","S1A","4","No practicante",81
+"practica","S1A","-1","No sabe",11
+"practica","S1A","2","Practicante",383
+"religion","S1","6","Adventista",35
+"religion","S1","14","Ateo",14
+"religion","S1","1","Católica",757
+"religion","S1","12","Creyente, no pertenece a Iglesia",15
+"religion","S1","3","Evangélica bautista",15
+"religion","S1","4","Evangélica metodista",6
+"religion","S1","5","Evangélica pentecostal",20
+"religion","S1","2","Evangélica sin especificar",196
+"religion","S1","8","Mormón",5
+"religion","S1","97","Ninguna",102
+"religion","S1","-2","No contesta",7
+"religion","S1","-1","No sabe",12
+"religion","S1","10","Protestante",6
+"religion","S1","7","Testigos de Jehová",10
+"ideologia","P16ST","0","0 Izquierda",114
+"ideologia","P16ST","1","1",24
+"ideologia","P16ST","10","10 Derecha",113
+"ideologia","P16ST","2","2",43
+"ideologia","P16ST","3","3",55
+"ideologia","P16ST","4","4",78
+"ideologia","P16ST","5","5",361
+"ideologia","P16ST","6","6",60
+"ideologia","P16ST","7","7",59
+"ideologia","P16ST","8","8",59
+"ideologia","P16ST","9","9",32
+"ideologia","P16ST","97","Ninguno",125
+"ideologia","P16ST","-2","No contesta",6
+"ideologia","P16ST","-1","No sabe",71
+"ingreso","S5","1","Les alcanza bien, pueden ahorrar",210
+"ingreso","S5","2","Les alcanza justo, sin grandes dificultades",460
+"ingreso","S5","-2","No contesta",11
+"ingreso","S5","3","No les alcanza, tienen dificultades",390
+"ingreso","S5","4","No les alcanza, tienen grandes dificultades",105
+"ingreso","S5","-1","No sabe",24

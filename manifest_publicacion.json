@@ -1,7 +1,7 @@
 [
   {
     "path": "README.md",
-    "sha256": "f3cb874716f8ba510057c75c60f3a3e823e7578c332ed645f5e327d139814fe0"
+    "sha256": "4b59d0fb39bc7627877b2d07a123ff4994663f618ba224530c99fa698eed941c"
   },
   {
     "path": ".gitignore",
@@ -33,7 +33,7 @@
   },
   {
     "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/DOSSIER_ANALITICO.md",
-    "sha256": "6ec3656686c2c0f36bc77ef3b59bbc55398a9e53a6f40395b5baf6ab0fbc1e7f"
+    "sha256": "5b0f1443e0cdf8dc9531680703b891240ad3c8138fbe3945567cc504f02b1417"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/README.md",
@@ -52,20 +52,36 @@
     "sha256": "82f63602a0e22fcd764a4fedc92bdede745ce0f0b7249022b9a4766c84dbe247"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/CIERRE_VERIFICADO.md",
+    "sha256": "b861ee59bf9635b77f19596497b4eeb251cc26b2cc1dbc8b92043026561b78e3"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md",
-    "sha256": "55605833217943f4e07cf4fb7b18661a6bb788f23691d6396d0cb4913732b02a"
+    "sha256": "1bfcd8a61c550598474616dc6d88614395d799065a3ee59770e1ac16b8bed15d"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/README.md",
-    "sha256": "f46afbc6ee276055201b260ad7433ff59b977f44a5730c81c32ea51c05a337e7"
+    "sha256": "620cfe443b258f80142c6fe0ddff50c6d0918903eb2ec85071c2a13650f13c4a"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/SOLICITUD_TECNICA_AL_PRODUCTOR.md",
-    "sha256": "77594a668ae86f6fdc01f2dc870e49e6cdfc61eaa154a54a56e2d76fcae3168d"
+    "sha256": "445fc5a4ac7f39a556cc3317e29e8144999f63ef7954689a6ae77ad88526589e"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/verificar_reproduccion.R",
     "sha256": "48a58a0a6c27ab9a3797554ea8932a51a4338ef0944338c1511ff6f75a721447"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/completar_cotejos.R",
+    "sha256": "0c1ecb7097a4e9cd797b18bc2357a2051206ebb0767707d8c1ee69dffd2e7d2f"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/diagnostico_factorial.R",
+    "sha256": "151f5d238c3803f83afa7030953757067925c5361bc13714fa489c3e7f8e63af"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/verificar_redescarga.py",
+    "sha256": "178ab8e0e55ab8dc4cc8a7b1f9e8da74e076ce63028f228f80258845bcda358f"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/analisis_exhaustivo/resultados/auditoria_covariables_cruces.csv",
@@ -284,8 +300,24 @@
     "sha256": "e2913221d7ff697c75f1cb816d6c318f1d04cbd5fb2f8677d4b99c0667ad59da"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/catalogo_UPM_cotejado_2018_2020.csv",
+    "sha256": "4601da54a33fd564f03c81fa85b4edb0dcfd80cc37d43e041e155803db8e1d65"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/celdas_observadas_modelos.csv",
+    "sha256": "5e7a8f1f5b21d9048cf019fa6656b3704c5747d6512bbd9c86dd7f26fc4ebf6d"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/codigos_covariables_historicas_crudos.csv",
+    "sha256": "d4f6730fb690cb7787673b3b663bb7c20fff08deefd63d776afc33b82a67fd3f"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/controles_automaticos.csv",
     "sha256": "4f1585f01dc604c4d0657f58ec76578253b95511ebcc3688a23ef953cf9daa59"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/correlaciones_policoricas_2023.csv",
+    "sha256": "b5ba04c5b733035e6839646b2a5107a198b4d92c916d6a91c9084de49fd9777e"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/cotejo_csv_spss_2023.csv",
@@ -296,8 +328,44 @@
     "sha256": "2eb65aad40526824051106aecfe7e2e07c78c69c560d27d8eff0f3c2850decf9"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/cotejo_unidades_2018_2020.csv",
+    "sha256": "0230d23f63df181494bfa3975162726595eff36f8fc0afb19b8ae59b131fa3b2"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/cruces_covariables_historicas.csv",
+    "sha256": "bbfb07e81b9f1204d95015c138adce4f3db58a7831f948246fea19ed0dfe11ae"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/diagnostico_influencia_logistica_2024.csv",
+    "sha256": "bf53f975756477b5f6cf22e8b4ef1ff1087163174c64337d5247074adb6f566c"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/diagnosticos_numericos_modelos.csv",
+    "sha256": "04967ff8f69c52dfc56fe5d57b79b8eaa64b455cf30989347508f719d0374773"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/diccionario_covariables_historicas_50.csv",
+    "sha256": "c2b275749dcc6524e721bd391c63ab930d33db84f9b7849dc1c6353805b03f3e"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/etiquetas_covariables_csvtext_2024.csv",
+    "sha256": "842ce40a6adbcb6ec3db52f61b5f4e1b8be6b2ee9d44508b18f7df4398352ad0"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/etiquetas_spss_2023.csv",
     "sha256": "eacadd05381710f2529a19c36d4ebfa0178243376887c06bf6edebb9712ed145"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/factor_ordinal_2023_ajuste.csv",
+    "sha256": "8e1dd1ba5d1326ef188a8919bbeb5e516a8ff2d6e551f4067ae71a716bf3954f"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/factor_ordinal_2023_controles.csv",
+    "sha256": "102a54f490bddedbc1ed8910af21a7b93f9d28417be541b339b3f7ccf617c592"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/factor_ordinal_2023_parametros.csv",
+    "sha256": "13eefb42164836d5be96765dedd8b0b84c49312bf842b90addaf1138d8a8dae8"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/hallazgo_complementario_vecinos_2009.csv",
@@ -324,12 +392,28 @@
     "sha256": "25365526bb7263bacb944f965ee47bd698394c727cd1fa642ceac67f67260579"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/perfil_covariables_historicas_homologadas.csv",
+    "sha256": "b8a4e91176e8a6e7ffcc92d7cc48adfb69215f1a3c455d2f106a82cf4e2a6df4"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/perfil_homologado_sexo_edad_10_oleadas.csv",
     "sha256": "5c8704dbb1ae3fba971edcba530c66a9793720ad60a4001e28381f0eaf5053b2"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/pruebas_covariables_historicas.csv",
+    "sha256": "51d28e8fc6560ecc9286c540281f42ebc0de164983b78dcac34cf29aaa80ed28"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/reproduccion_clon_redescarga.csv",
+    "sha256": "72a27bf87b11f1e90e5c889dad936e472d6cb76a6e5f06dfb0bbbcfa17e0f86b"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/reproduccion_csv_directorio_nuevo.csv",
     "sha256": "1d47fe8a5cadd6de5598c3697e7d49ef89995a8829e848c88132865711bb82a5"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/residuos_factor_ordinal_2023.csv",
+    "sha256": "853178f2c37be1c99965302a7711e28707ad7eaea7a35914bbc5294fcb9316f7"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/seleccion_casos_completos_resultado.csv",
@@ -340,11 +424,19 @@
     "sha256": "522c5f0fd34553c3f606d796011bf1b75c284b00af2ab43c92cb91aa815c1321"
   },
   {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/sensibilidad_todas_pendientes_bloques.csv",
+    "sha256": "cc4f6d63a6a4ac761fe9dbad0a5291af7bd8cbdef918f9b6bb4e28075f307b0b"
+  },
+  {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/trazabilidad_perfil_10_oleadas.csv",
     "sha256": "7ee2683f14ede68b76261a548abb20d5bdad8a523e4514217fa58e9f5ce09008"
   },
   {
     "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/umbrales_ordinales_verificados.csv",
     "sha256": "aceba929c846b198dc502088ef27a2ba416351f97349124a4979e69384fab713"
+  },
+  {
+    "path": "Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/resultados/verificacion_redescarga_23.csv",
+    "sha256": "acd4df625d11ac99c1a6cdd9a9f695880c607a32a25ec79465700e0c7c793c1e"
   }
 ]

@@ -4,7 +4,7 @@ Autor: Jean Paolo Porcel Inquillo. Estado: versión de trabajo del 8 de octubre 
 
 Repositorio público: https://github.com/MonsieurUlupica/latinobarometro-bolivia-laboratorio
 
-El laboratorio documenta el análisis secundario de 23 bases bolivianas de 1996–2024. El artículo utiliza catorce mediciones en diez oleadas. El código exploratorio, el análisis exhaustivo, la verificación independiente y el cierre metodológico son etapas distintas. El código principal ya incorpora 2009 y exporta pendientes y umbrales por separado. El estado vigente se documenta en [el informe de cierre](Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/INFORME_CIERRE_METODOLOGICO.md); los informes previos conservan observaciones históricas, no una lista actual de pendientes.
+El laboratorio documenta el análisis secundario de 23 bases bolivianas de 1996–2024. El artículo utiliza catorce mediciones en diez oleadas. El código exploratorio, el análisis exhaustivo, la verificación independiente y el cierre metodológico son etapas distintas. El código principal incorpora 2009 y exporta pendientes y umbrales por separado. El estado vigente se documenta en [el cierre verificado](Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/CIERRE_VERIFICADO.md); los informes previos conservan observaciones históricas, no una lista actual de pendientes.
 
 ## Contenido público
 
@@ -32,9 +32,11 @@ Rscript Latinobarometro_historico_Bolivia/analisis_exploratorio/analisis_explora
 Rscript Latinobarometro_historico_Bolivia/analisis_exhaustivo/analisis_exhaustivo.R
 Rscript Latinobarometro_historico_Bolivia/auditoria_tecnica_2026_10_08/verificacion_independiente.R
 Rscript Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/cerrar_pendientes.R
+Rscript Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/completar_cotejos.R
+Rscript Latinobarometro_historico_Bolivia/cierre_metodologico_2026_10_08/diagnostico_factorial.R
 ```
 
-El script exploratorio es una etapa histórica, no un requisito del análisis exhaustivo. La verificación independiente lee las salidas del análisis exhaustivo y debe ejecutarse después. El cierre regenera también el código principal y requiere adicionalmente el SPSS agregado oficial 2023, no redistribuido; su enlace y ruta local están en el README de esa etapa. Trabajar en una copia para preservar salidas anteriores. `verificar_reproduccion.R` regeneró 43 CSV idénticos en un directorio nuevo, usando las mismas entradas locales; no equivale a un clon con entradas redescargadas.
+El script exploratorio es una etapa histórica, no un requisito del análisis exhaustivo. La verificación independiente lee las salidas del análisis exhaustivo y debe ejecutarse después. El cierre requiere adicionalmente el SPSS oficial 2023, no redistribuido. Los cotejos adicionales requieren documentación y CSVText 2024; el diagnóstico factorial requiere `lavaan` (ejecutado 0.7-3). Sus rutas y condiciones están en el README de esa etapa. Trabajar en una copia para preservar salidas anteriores. `verificar_reproduccion.R` verificó las mismas entradas locales. Posteriormente `verificar_redescarga.py` verificó 23 CSV oficiales redescargados en un clon separado y 43/43 salidas principales idénticas, aportando los PDF desde el expediente local.
 
 Los porcentajes describen respuestas observadas. Las pruebas e intervalos SRS son sensibilidades bajo supuestos simplificados; `REG` y `COMDIST` no reconstruyen el diseño oficial. No se estima población LGBTIQ+, cambio individual ni efectos causales.
 
@@ -48,13 +50,15 @@ Para fijar una versión, añadir la URL del commit publicado. No se ha asignado 
 
 - Descripción y cobertura muestral cotejadas para 22 de 23 ediciones. En 2023 se verificaron universo y modalidad; falta ficha boliviana detallada. «18 de 23» era cotejo documental, no cantidad de bases recuperadas.
 - Resuelto −5 de 2023 mediante etiquetas SPSS y coincidencia de 1.200 registros en diez campos frente al CSV.
-- Homologados sexo registrado y edad exacta de las diez muestras sustantivas. Otras covariables históricas requieren armonización específica.
+- Homologados sexo y edad de diez muestras; completadas 50 correspondencias adicionales de educación, práctica, religión, ideología e ingreso, conservando diferencias documentales y códigos originales.
+- Ejecutados 70 cruces adicionales y 65 ajustes de sensibilidad, con todos los resultados y nulos. Modelo factorial ordinal de cuatro ítems ejecutado con diagnósticos discordantes, sin certificar escala general validada.
+- Cotejados 240 puntos y 1.200 cédulas de 2018/2020; COMDIST ausente en 2018 y coincidencia exacta de 240 códigos en 2020, sin equiparar puntos con todas las etapas del diseño.
 - Ejecutados Monte Carlo condicional en tablas mayores escasas y diagnósticos de selección por casos completos, con sensibilidad a no aplicable en práctica religiosa.
 - Contexto de 2009 revisado en cuestionario inglés y libro español; falta cuestionario español para identidad literal. Se documenta un ítem vecinal adicional como hallazgo complementario, no como serie homogénea.
 
 ## Lo que continúa abierto
 
-Reconstrucción integral de unidades y probabilidades originales y tasas de respuesta; ficha boliviana detallada 2023; discrepancias de N de 2000/2001; cotejo literal español 2009; homologación de educación y demás covariables históricas. La solicitud técnica al productor está preparada, no enviada. Estos asuntos no se confunden con las tareas efectivamente ejecutadas.
+Información específica del productor para reconstrucción integral de unidades, probabilidades y tasas de respuesta; ficha boliviana detallada 2023; discrepancias de N de 2000/2001 y unicidad de NUMENTRE; cotejo literal español íntegro 2009 e inconsistencia entre plan y catálogo de puntos de Beni 2018. La solicitud técnica está preparada, no enviada. La homologación y los diagnósticos identificados como tareas nuestras están ejecutados; no se afirma agotamiento de todos los análisis posibles.
 
 ## Derechos y alcance
 

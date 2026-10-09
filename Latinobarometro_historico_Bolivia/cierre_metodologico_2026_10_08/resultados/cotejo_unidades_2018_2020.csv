@@ -1,0 +1,3 @@
+"anio","n_microdato","campo_COMDIST","n_codigos_catalogo","n_codigos_base","conjuntos_coinciden","todos_cinco","cada_codigo_una_ciudad","prefijo_corresponde_REG","n_filas_plan","n_cedulas_plan","alcance"
+2018,1200,"Ausente",240,0,,,,,240,1200,"Listado documental cotejado; campo de punto no publicado en este CSV"
+2020,1200,"COMDIST",240,240,TRUE,TRUE,TRUE,TRUE,240,1200,"Correspondencia de códigos de punto verificada; no probabilidades por etapa ni estrato urbano/rural reconstruidos"

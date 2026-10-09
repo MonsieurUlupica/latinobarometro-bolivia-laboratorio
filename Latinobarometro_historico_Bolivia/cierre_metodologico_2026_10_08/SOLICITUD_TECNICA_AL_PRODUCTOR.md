@@ -11,5 +11,6 @@ Se realiza un análisis académico secundario de archivos nacionales bolivianos 
 5. Cuestionario boliviano en español de 2009. Se dispone de cuestionario inglés y libro de códigos español; confirmar texto aplicado y universo de P63WVSST y P64ST.A.
 6. Aclarar la diferencia entre 1.080 filas del CSV nacional 2000 y 1.000 casos de su ficha; entre 1.075 filas de 2001 y 1.080 de su ficha. Se conservaron todos los registros; no se eliminó ni completó ninguna fila.
 7. Aclarar unicidad y ámbito de NUMENTRE en 2002/2006; existen identificadores repetidos en filas diferentes, retenidas provisionalmente.
+8. Aclarar las denominaciones de los puntos 106–109 de Beni en el informe metodológico 2018: plan y catálogo presentan asignaciones diferentes. El CSV no contiene COMDIST; no se imputaron puntos a registros. En 2020 se comprobó coincidencia exacta de 240 códigos COMDIST con el catálogo de puntos; se solicita precisar su posición en el diseño multietápico, no confirmar nuevamente esa coincidencia numérica.
 
 Para 2023 se verificó que −5 corresponde a No sabe / No contesta en SPSS y que los diez campos cotejados coinciden con el CSV. No se presenta esa etiqueta como discrepancia sin resolver. El catálogo por país consultado ofrece `samplingHtml` vacío; agradeceríamos un enlace a la ficha aunque no figure en esa sección.
